@@ -39,19 +39,22 @@
 		    <div>
 		      <div class="collapse navbar-collapse col-lg-10" id="myNavbar">
 		        <ul class="nav navbar-nav">
-		          <li><a href="#home" id="menu" >Home</a></li>
-		          <li><a href="#about" >About Us</a></li>
+		          	<li><a href="#home" id="menu" >Home</a></li>
+		          	<li><a href="#about" >About Us</a></li>
+
+
 		        </ul>
 				
-				<style type="text/css">
-					ul li:hover {background: #3366FF;}
-					ul li:hover ul {display: block;}
-				</style>	        
+					        
 
 		      </div>
 		        <ul class="nav navbar-right top-nav" >
-		            
+		            <li><a href="" >Login</a></li>
 		        </ul>
+		        <style type="text/css">
+					ul li:hover {background: #3366FF;}
+					ul li:hover ul {display: block;}
+				</style>
 		    </div>
 		  </div>
 		</nav>
@@ -62,10 +65,40 @@
 				<p><i>ILMI</i>   in Swedish is mean 'Knowledge'<br>
 				<font size=-1>Kingdom of Learning and prepare for yourself to study or increase your score.<br>
 				You can find fit teacher(s) in many lessons and more interested things with us. Come and join!!</font></p>
-				<a href="#" class="btn btn-primary">JOIN US</a>
+				<!-- <a href="#" class="btn btn-primary">JOIN US</a> -->
+				<button type="button" class="btn btn-info pull-center " data-toggle="modal" data-target="#myModal7" style="margin-right:10px;background-color: yellow;color: #3366ff;">JOIN US</button>
 			</div>
 		</div>
 	</div>
+
+
+	<!-- modal join us -->
+	<div class="modal fade" id="myModal7" role="dialog" >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"></button>
+                    <h4 class="modal-title" >REGISTER ACCOUNT</h4>
+                </div>
+                <div class="modal-body"style=" text-align: center;height : 220px;">
+                    <div class="col-xs-12" id="status">
+                        <table class="table table-bordered" width="100%" >
+                            
+                            
+                        </table>
+                    </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" style="float : right; margin-right : 20px">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
 	<!-- Services section start -->
 	<section id="about">
 		<div class="container">
