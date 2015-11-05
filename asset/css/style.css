@@ -182,7 +182,7 @@ SERVICES
 }
 
 .service-item .icon{
-	border: 1px #b3b3b3 solid;
+	border: 2px #3366ff solid;
 	margin: 0 auto;
 	border-radius: 100%;
 	width: 110px;
@@ -198,12 +198,12 @@ SERVICES
 }
 
 .service-item .icon:hover{
-	background-color: #fa694e;
-	border-color: #fa694e;
+	background-color: yellow;
+	border-color: yellow;
 }
 
 .service-item .icon:hover i{
-	color: #fff;
+	color: #3366ff;
 }
 .service-item h3{
 	margin-bottom: 60px;
@@ -327,14 +327,14 @@ PORTFOLIO
 	background: #fa5c58;
 	border-width: 2px;
 	color: #fff;
-	border-color: #fa5c58;
+	border-color: #3366ff;
 }
 
 .btn-primary:hover,
 .btn-primary:focus{
-	background: #fff;
-	color: #fa5c58;
-	border-color: #fe4a46;
+	background: yellow;
+	color: #3366ff;
+	border-color: yellow;
 }
 
 
