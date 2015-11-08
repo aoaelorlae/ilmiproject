@@ -48,8 +48,24 @@
 					        
 
 		      </div>
+		    <style type="text/css">
+		    	/*#limenu>a {
+				    position: relative;
+				    display: block;
+				    padding: 10px 15px;
+				    margin-top : -15px;
+				    margin-left : -15px;
+				}*/
+		    </style>
 		        <ul class="nav navbar-right top-nav" >
-		            <li><a href="" >Login</a></li>
+		            	<?php
+		            		echo anchor("login", "<button type='button' class='btn btn-info'>Login</button>");
+		            	?>
+		        </ul>
+		        <ul class="nav navbar-right top-nav" >
+		            <li>
+		            	<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal7">Register</button></li>
+		            </li>
 		        </ul>
 		        <style type="text/css">
 					ul li:hover {background: #3366FF;}
@@ -82,10 +98,13 @@
                 </div>
                 <div class="modal-body"style=" text-align: center;height : 220px;">
                     <div class="col-xs-12" id="status">
-                        <table class="table table-bordered" width="100%" >
-                            
-                            
-                        </table>
+                        <div class="col-xs-6">
+                        	<button type="button" class="btn btn-default" style="background-color: #3366ff;color:white;margin-top: 45%">Register Student</button>
+                        </div>
+                        <div class="col-xs-6">
+                        	<button type="button" class="btn btn-default" style="background-color: #3366ff;color:white;margin-top: 45%">Register Tutor</button>
+                        	
+                        </div>
                     </div>
                     
                 </div>

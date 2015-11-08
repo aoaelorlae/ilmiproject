@@ -232,7 +232,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = 'localhost';
+$config['encryption_key'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -336,7 +336,7 @@ $config['compress_output'] = FALSE;
 | regarding date handling.
 |
 */
-$config['time_reference'] = 'UTC';
+$config['time_reference'] = 'local';
 
 
 /*
