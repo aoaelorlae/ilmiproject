@@ -49,9 +49,9 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = '';
+$db['default']['username'] = 'root';
 $db['default']['password'] = '';
-$db['default']['database'] = '';
+$db['default']['database'] = 'telekhong';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
@@ -64,6 +64,20 @@ $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
 
-
+$db['te']['hostname'] = '10.4.43.99';
+$db['te']['username'] = 'telekhongweb';
+$db['te']['password'] = 'seniorproject2015';
+$db['te']['database'] = 'telekhong';
+$db['te']['dbdriver'] = 'mysql';
+$db['te']['dbprefix'] = '';
+$db['te']['pconnect'] = TRUE;
+$db['te']['db_debug'] = TRUE;
+$db['te']['cache_on'] = FALSE;
+$db['te']['cachedir'] = '';
+$db['te']['char_set'] = 'utf8';
+$db['te']['dbcollat'] = 'utf8_general_ci';
+$db['te']['swap_pre'] = '';
+$db['te']['autoinit'] = TRUE;
+$db['te']['stricton'] = FALSE;
 /* End of file database.php */
 /* Location: ./application/config/database.php */
