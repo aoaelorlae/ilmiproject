@@ -69,7 +69,7 @@
             <div id="page-wrapper">
                 <div class="container-fluid">
                 	<div class="col-lg-4 col-sm-1"></div>
-                	<div class="col-lg-4 col-sm-6" style="background-color: #D7D7D7;border-radius: 30px;height: 30%;margin-top: 10%;width: 30%">
+                	<div class="col-lg-4 col-sm-6" style="background-color: #D7D7D7;border-radius: 30px;height: 30%;margin-top: 10%;">
                 		<h1 style="text-align: center;padding-top: 5%">Login</h1>
                 		<input type="email" class="form-control" placeholder="Email" style="width: 80%; margin: 0px auto; margin-top: 5%">
                 		<input type="password" class="form-control" placeholder="Password" style="width: 80%; margin: 0px auto; margin-top: 5%">
