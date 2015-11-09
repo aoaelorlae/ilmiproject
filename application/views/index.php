@@ -151,62 +151,7 @@
 	</section>
 	 
 	<!-- Portfolio section end -->
-	<!-- Contact section start -->
-	<section id="contact">
-		<div class="container">
-			<header>
-				<h2 style ="color:#3366ff;">Get in Touch</h2>
-				<p>เราอยู่ไม่ไกล โปรดอย่ามองข้าม มามะ มาจอยกัน
-				</p>
-			</header>
-			<div class="map-wrapper">
-				<div class="map-canvas" id="map-canvas">Loading map...</div>
-				<div class="marker">
-					<span>We Are Here</span>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-8">
-					<form class="row">
-						<div class="form-group col-md-6">
-							<input name="name" type="text" placeholder="Your Name" class="form-control" />
-						</div>
-						<div class="form-group col-md-6">
-							<input name="mail" type="email" placeholder="Your Email" class="form-control" />
-						</div>
-						<div class="form-group col-md-12">
-							<input name="subject" type="text" placeholder="Type Message Here..." class="form-control" />
-						</div>
-						<div class="form-group col-md-12">
-							<textarea name="message" class="form-control" rows="10" placeholder="Message"></textarea>
-						</div>
-						<div class="form-group col-md-12">
-							<button class="btn btn-lg btn-primary">Send</button>
-						</div>
-					</form>
-				</div>
-				<div class="col-md-3 col-md-offset-1">
-					<address>
-						<span>Our Address</span>
-						<p>
-							FIET CB3, KMUTT<br>
-							Prachautid Rd. Bangmod Thungkru<br>
-							Bangkok :)
-						</p>
-					</address>
-					<address>
-						<span>Email </span>
-						<p>ilmitutor@ilmi.com</p>
-					</address>
-					<address>
-						<span>Phone</span>
-						<p>1150</p>
-					</address>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Contact section end -->
+	
 	<!-- Footer start -->
 	<footer>
 		<div class="container">
