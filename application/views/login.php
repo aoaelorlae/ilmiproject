@@ -44,8 +44,8 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<?=base_url()?>store">Ilmi Tutor</a>
-                </div>
+                    <a class="navbar-brand" href="#" style ="color:#:;">ILMITUTOR.COM</a>
+            </div>
                 
 
                 <ul class="nav navbar-right top-nav">
@@ -95,8 +95,8 @@
             <div class="col-lg-12" style="margin-top: 40px">
                <ol class="breadcrumb">
                 <li>You can contact us in this page </li>
-                <li> facebook : www.facebook.com/Telekhong</li>
-                <li> KingMongkutt's University of technology thonburi</li>
+                <li> Facebook : www.facebook.com/Telekhong</li>
+                <li> King Mongkut's University of Technology Thonburi</li>
              </ol>
          </div>
      </div>

@@ -99,10 +99,10 @@
                 <div class="modal-body"style=" text-align: center;height : 220px;">
                     <div class="col-xs-12" id="status">
                         <div class="col-xs-6">
-                        	<button type="button" class="btn btn-default" style="background-color: #3366ff;color:white;margin-top: 45%">Register Student</button>
+                        	<button type="button" class="btn btn-default" style="background-color: #3366ff;color:white;margin-top: 30%">Register Student</button>
                         </div>
                         <div class="col-xs-6">
-                        	<button type="button" class="btn btn-default" style="background-color: #3366ff;color:white;margin-top: 45%">Register Tutor</button>
+                        	<button type="button" class="btn btn-default" style="background-color: #3366ff;color:white;margin-top: 30%">Register Tutor</button>
                         	
                         </div>
                     </div>
