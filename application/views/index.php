@@ -59,7 +59,7 @@
 		    </style>
 		        <ul class="nav navbar-right top-nav" >
 		            	<?php
-		            		echo anchor("login", "<button type='button' class='btn btn-info'>Login</button>");
+		            		echo anchor("", "<button type='button' class='btn btn-info'>Login</button>");
 		            	?>
 		        </ul>
 		        <ul class="nav navbar-right top-nav" >
