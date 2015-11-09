@@ -41,6 +41,7 @@
 		        <ul class="nav navbar-nav">
 		          	<li><a href="#home" id="menu" >Home</a></li>
 		          	<li><a href="#about" >About Us</a></li>
+		          	<li><a href="#about" >How to</a></li>
 
 
 		        </ul>
@@ -114,7 +115,11 @@
 
             </div>
         </div>
+
     </div>
+
+
+
 
 
 
@@ -150,6 +155,23 @@
 		</div>
 	</section>
 	 
+	 <section id="about">
+		<div class="container">
+			<div class="row">
+				<div class="img-circle">
+					<h3 style="color:#3366ff;text-align: center;">How to ...</h3>
+						
+						<div class="icon"></div>
+						 <img src="<?=base_url()?>images/icon/pic1.jpg" class="img-circle" alt="howto1" style="border-style: solid;border-width: 1px;width: 140px;height: 140px">
+						 <img src="" class="img-circle" alt="howto2" >
+						 <img src="" class="img-circle" alt="howto3" >
+
+						</p>
+					</div>
+				
+	
+
+
 	<!-- Portfolio section end -->
 	
 	<!-- Footer start -->
