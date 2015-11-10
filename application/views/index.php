@@ -169,7 +169,13 @@
 						</p>
 					</div>
 				
-	
+	<div class="icon"></div>
+						 <img src="<?=base_url()?>images/icon/pic1.jpg" class="img-circle" alt="howto1" style="border-style: solid;border-width: 1px;width: 140px;height: 140px">
+						 <img src="" class="img-circle" alt="howto2" >
+						 <img src="" class="img-circle" alt="howto3" >
+
+						</p>
+					</div>
 
 
 	<!-- Portfolio section end -->
