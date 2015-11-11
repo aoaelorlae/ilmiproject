@@ -38,6 +38,8 @@
 
                 <!-- <form action="<?php //echo site_url();?>/createstore/create" method="post" accept-charset="utf-8" enctype="multipart/form-data" onsubmit="javascript:return checkfield();"> -->
                 <!-- username -->
+               <div style="text-align:left;"><h3>1.ข้อมูลนักเรียน</h3><hr>
+
                 <div class="col-lg-6" style="text-align:right;" >Username :</div>
                 <div class="col-lg-6"><input type="text" name="username" class="form-control" placeholder="Username" style="width:200px" id="stn"></div>
                 <div class="col-lg-12" style="margin-top:30px;"></div>
@@ -66,6 +68,7 @@
                    </select>
                 </div>
                 <div class="col-lg-12" style="margin-top:30px;"></div>
+                </div>
 
                 <!-- email -->
                 <div class="col-lg-6" style="text-align:right;" >E-Mail :</div>
