@@ -21,8 +21,39 @@
 	<link rel="stylesheet" type="text/css" href="../../ilmiproject/asset/css/font-awesome.css" />
 	<link rel="stylesheet" type="text/css" href="../../ilmiproject/asset/css/style.css" />
 
+	<!-- Load jQuery -->
+	<script type="text/javascript" src="../../ilmiproject/asset/js/jquery-1.11.2.min.js"></script>
+
+	<!-- Load Booststrap -->
+	<script type="text/javascript" src="../../ilmiproject/asset/js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="../../ilmiproject/asset/js/smooth-scroll.js"></script>
+
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+	<!-- Load custom js for theme -->
+	<script type="text/javascript" src="../../ilmiproject/asset/js/app.js"></script>
+
 </head>
 <body>
+	<script type="text/javascript">
+		$(function() {
+		  $('a[href*=#]:not([href=#])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html,body').animate({
+		          scrollTop: target.offset().top
+		        }, 1000);
+		        return false;
+		      }
+		    }
+		  });
+		});
+	</script>
+
+
 	<div class="jumbotron home home-fullscreen" id="home">
 		<div class="mask"></div>
 		
@@ -39,9 +70,9 @@
 		    <div>
 		      <div class="collapse navbar-collapse col-lg-10" id="myNavbar">
 		        <ul class="nav navbar-nav">
-		          	<li><a href="#home" id="menu" >Home</a></li>
-		          	<li><a href="#about" >About Us</a></li>
-		          	<li><a href="#about" >How to</a></li>
+		          	<li><a href="#home" style="color: #9d9d9d;" >Home</a></li>
+		          	<li><a href="#about" style="color: #9d9d9d;">About Us</a></li>
+		          	<li><a href="#howto" style="color: #9d9d9d;">How to</a></li>
 
 
 		        </ul>
@@ -124,28 +155,30 @@
 
 
 	<!-- Services section start -->
+
 	<section id="about">
 		<div class="container">
+			<h1 style="color:#3366ff;text-align: center;margin-bottom: 10%; ">..ABOUT Us..</h1>
 			<div class="row">
 				<div class="col-md-4">
 					<div class="service-item">
-						<div class="icon"><i class="fa fa-diamond" ></i></div>
-						<h3 style="color:#3366ff">We Are Less Difficult</h3>
-						<p>Design for many ages of anonymous and have discription in every step to use ILMITUTOR
+						<div class="icon"><i class="fa fa-book" ></i></div>
+						<h3 style="color:#3366ff">Easy Technic</h3>
+						<p>มีเทคนิคมากมาย และการสอนที่เป็นกันเ
 						</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="service-item">
-						<div class="icon"><i class="fa fa-diamond"></i></div>
-						<h3 style="color:#3366ff">We Are Beautiful</h3>
-						<p>Our team produced and easy and beauty website สวยยยยยยยยยยยย
+						<div class="icon"><i class="fa fa-car"></i></div>
+						<h3 style="color:#3366ff">Save Time</h3>
+						<p>สะดวกในการเดินทาง สามารถนัดเรียนตามสถานที่ ที่นักเรียนและติวเตอร์ตกลงกันได้ 
 						</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="service-item">
-						<div class="icon"><i class="fa fa-diamond"></i></div>
+						<div class="icon"><i class="fa fa-users"></i></div>
 						<h3 style="color:#3366ff">We Know You Want Us</h3>
 						<p>สื่อกลางเครือข่ายการติดต่อระหว่่างติวเตอร์และนักเรียนที่สนใจ คุณสามารถค้นหาวิชาที่สนใจทั้งเรียนหรือสอนได้จากพวกเรา ทางเราคัดสรรบุคคลสมาชิกที่มีตัวตนจริง มีการตรวจสอบก่อนยืนยันการใช้งาน
 						</p>
@@ -155,28 +188,23 @@
 		</div>
 	</section>
 	 
-	 <section id="about">
+	 <section id="howto" style="background: #F0F0ED;">
 		<div class="container">
 			<div class="row">
 				<div class="img-circle">
-					<h3 style="color:#3366ff;text-align: center;">How to ...</h3>
-						
-						<div class="icon"></div>
-						 <img src="<?=base_url()?>images/icon/pic1.jpg" class="img-circle" alt="howto1" style="border-style: solid;border-width: 1px;width: 140px;height: 140px">
-						 <img src="" class="img-circle" alt="howto2" >
-						 <img src="" class="img-circle" alt="howto3" >
-
-						</p>
-					</div>
+					<h1 style="color:#3366ff;text-align: center;margin-bottom: 10%; ">..ILMITUTOR..</h1>
+						<center>
+						<img src="<?=base_url()?>images/icon/pic2.jpg" class="img-circle" alt="howto1" style="border-style: solid;border-width: 3px;width: 200px;height: 200px;border-color: #888888; ">
+						<img src="<?=base_url()?>images/icon/pic4.jpg" class="img-circle" alt="howto1" style="border-style: solid;border-width: 3px;width: 200px;height: 200px ;margin-left: 2% ;margin-bottom: 13%;;border-color: #888888;">
+						<img src="<?=base_url()?>images/icon/pic3.jpg" class="img-circle" alt="howto1" style="border-style: solid;border-width: 3px;width: 200px;height: 200px ;margin-left: 2%;border-color: #888888;">
+						<img src="<?=base_url()?>images/icon/pic1.jpg" class="img-circle" alt="howto1" style="border-style: solid;border-width: 3px;width: 340px;height: 340px ;;margin-left: 2% ;margin-bottom: 5%;;border-color: #888888;">
+						</center>
+				</div>		
+			</div>
+		</div>
+	</section>
 				
-	<div class="icon"></div>
-						 <img src="<?=base_url()?>images/icon/pic1.jpg" class="img-circle" alt="howto1" style="border-style: solid;border-width: 1px;width: 140px;height: 140px">
-						 <img src="" class="img-circle" alt="howto2" >
-						 <img src="" class="img-circle" alt="howto3" >
-
-						</p>
-					</div>
-
+	
 
 	<!-- Portfolio section end -->
 	
@@ -201,17 +229,6 @@
 	</footer>
 	<!-- Footer end  -->
 
-	<!-- Load jQuery -->
-	<script type="text/javascript" src="../../ilmiproject/asset/js/jquery-1.11.2.min.js"></script>
-
-	<!-- Load Booststrap -->
-	<script type="text/javascript" src="../../ilmiproject/asset/js/bootstrap.js"></script>
-
-	<script type="text/javascript" src="../../ilmiproject/asset/js/smooth-scroll.js"></script>
-
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-
-	<!-- Load custom js for theme -->
-	<script type="text/javascript" src="../../ilmiproject/asset/js/app.js"></script>
+	
 </body>
 </html>

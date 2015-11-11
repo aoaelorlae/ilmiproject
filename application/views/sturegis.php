@@ -41,7 +41,7 @@
                 <div class="col-lg-2"></div>
                 <!-- div center -->
                 <div class="col-lg-8">
-                    <div style="text-align:left;margin-left: 20px;"><h3>1.ข้อมูลนักเรียน</h3><hr>
+                    <div style="text-align:left;margin-left: 20px;"><h3></h3>
 
                     <!-- username -->
                     <div class="col-lg-6" style="text-align:right;" >Username :</div>
@@ -99,7 +99,7 @@
                     <!-- School Name -->
                     <div class="col-lg-6" style="text-align:right;" >School Name :</div>
                     <div class="col-lg-6"><input type="text" name="school" class="form-control" placeholder="Ilmi School" style="width:300px" id="telnum" onkeypress= numCheck();></div>
-                    <div class="col-lg-12" style="margin-top:30px;"></div>
+                    <div class="col-lg-12" style="margin-top:30px;"></div><hr>
 
 
                    
