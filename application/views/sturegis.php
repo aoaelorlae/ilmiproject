@@ -37,110 +37,87 @@
                 <center><h3>Student Register</h3></center><hr>
 
                 <!-- <form action="<?php //echo site_url();?>/createstore/create" method="post" accept-charset="utf-8" enctype="multipart/form-data" onsubmit="javascript:return checkfield();"> -->
-                <!-- username -->
-               <div style="text-align:left;"><h3>1.ข้อมูลนักเรียน</h3><hr>
-
-                <div class="col-lg-6" style="text-align:right;" >Username :</div>
-                <div class="col-lg-6"><input type="text" name="username" class="form-control" placeholder="Username" style="width:200px" id="stn"></div>
-                <div class="col-lg-12" style="margin-top:30px;"></div>
-
-                <!-- password -->
-                <div class="col-lg-6" style="text-align:right;" >Password :</div>
-                <div class="col-lg-6"><input type="password" name="pass" class="form-control" placeholder="Password" style="width:200px" id="stn"></div>
-                <div class="col-lg-12" style="margin-top:30px;"></div>
-
-                <!-- Name -->
-                <div class="col-lg-6" style="text-align:right;" >Name :</div>
-                <div class="col-lg-6"><input type="text" name="name" class="form-control" placeholder="Name" style="width:200px" id="stn"></div>
-                <div class="col-lg-12" style="margin-top:30px;"></div>
-
-                <!-- nickname -->
-                <div class="col-lg-6" style="text-align:right;" >Nickname :</div>
-                <div class="col-lg-6"><input type="text" name="nickname" class="form-control" placeholder="Nickname" style="width:200px" id="stn"></div>
-                <div class="col-lg-12" style="margin-top:30px;"></div>
-
-                <!-- sex -->
-                <div class="col-lg-6" style="text-align:right;" >Gender :</div>
-                <div class="col-lg-6">
-                    <select class="form-control col-lg-8" name="pack" style="width:300px ;">
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                   </select>
-                </div>
-                <div class="col-lg-12" style="margin-top:30px;"></div>
-                </div>
-
-                <!-- email -->
-                <div class="col-lg-6" style="text-align:right;" >E-Mail :</div>
-                <div class="col-lg-6"><input type="email" name="email" class="form-control" placeholder="E-Mail" style="width:200px" id="stn"></div>
-                <div class="col-lg-12" style="margin-top:30px;"></div>
-
-                <!-- birth -->
-                <div class="col-lg-6" style="text-align:right;" >Birth Date :</div>
-                <div class="col-lg-6">
-                    <input type="date" name="birth" id="birth" class="form-control" style="width:280px ; display : inline;" >
-                </div>
-                <div class="col-lg-12" style="margin-top:30px;"></div>
-
-                <!-- address -->
-                <div class="col-lg-6" style="text-align:right;" >Address :</div>
-                <div class="col-lg-6"><textarea class="form-control" name="address" rows="3" style="width:250px" placeholder="Address" id="address"></textarea></div>
-                <div class="col-lg-12" style="margin-top:30px;"></div>
-
-                <!-- store Tel -->
-                <div class="col-lg-6" style="text-align:right;" >Telephone Number :</div>
-                <div class="col-lg-6"><input type="text" name="tel" class="form-control" placeholder="0X-XXXX-XXXX" style="width:200px" id="telnum" onkeypress= numCheck();></div>
-                <div class="col-lg-12" style="margin-top:30px;"></div>
-
-                <!-- store Open Time -->
-                <div class="col-lg-6" style="text-align:right;" >Open Time :</div>
                 
-                <div class="col-lg-2">
-                    <div >
-                        <input id="time1" type="time" class="form-control input-small" name="opti"  >
-                    
-                </div>
-                </div>
-                <div class="col-lg-1" style="text-align:center">to</div>
-                <div class="col-lg-2">
-                    <div >
-                        <input id="time2" type="time" class="form-control input-small" name="clti" >
-                    
-                </div>
-                </div> 
-                <div class="col-lg-12" style="margin-top:30px;"></div>
+                <div class="col-lg-2"></div>
+                <!-- div center -->
+                <div class="col-lg-8">
+                    <div style="text-align:left;margin-left: 20px;"><h3>1.ข้อมูลนักเรียน</h3><hr>
 
-                <!-- store detail -->
-                <div class="col-lg-6" style="text-align:right;" >Store Detail :</div>
-                <div class="col-lg-6"><textarea class="form-control" name="detail" rows="3" style="width:250px" placeholder="Detail of Store" id="des"></textarea></div>
+                    <!-- username -->
+                    <div class="col-lg-6" style="text-align:right;" >Username :</div>
+                    <div class="col-lg-6"><input type="text" name="username" class="form-control" placeholder="Username" style="width:200px" id="stn"></div>
+                    <div class="col-lg-12" style="margin-top:30px;"></div>
 
+                    <!-- password -->
+                    <div class="col-lg-6" style="text-align:right;" >Password :</div>
+                    <div class="col-lg-6"><input type="password" name="pass" class="form-control" placeholder="Password" style="width:200px" id="stn"></div>
+                    <div class="col-lg-12" style="margin-top:30px;"></div>
 
-                <div class="col-lg-12" style="margin-top:10px;"></div>
-                    
-                    
-                    <div class="col-lg-12">&nbsp</div>
-                    <div class="col-lg-6" style="text-align:right;" >Package :</div>
+                    <!-- Name -->
+                    <div class="col-lg-6" style="text-align:right;" >Name :</div>
+                    <div class="col-lg-6"><input type="text" name="name" class="form-control" placeholder="Name" style="width:200px" id="stn"></div>
+                    <div class="col-lg-12" style="margin-top:30px;"></div>
+
+                    <!-- nickname -->
+                    <div class="col-lg-6" style="text-align:right;" >Nickname :</div>
+                    <div class="col-lg-6"><input type="text" name="nickname" class="form-control" placeholder="Nickname" style="width:200px" id="stn"></div>
+                    <div class="col-lg-12" style="margin-top:30px;"></div>
+
+                    <!-- sex -->
+                    <div class="col-lg-6" style="text-align:right;" >Gender :</div>
                     <div class="col-lg-6">
-                    <select class="form-control col-lg-8" name="pack" style="width:300px ;">
+                        <select class="form-control col-lg-8" name="pack" style="width:200px ;">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                       </select>
+                    </div>
+                    <div class="col-lg-12" style="margin-top:30px;"></div>
+                    </div>
 
-                      <?php
-                        foreach ($pack as $r) {
-                            echo "<option value='".$r['package_id']."'>Package ".$r['package_name']." : ".$r['price']."B/month</option>";
-                        }
+                    <!-- email -->
+                    <div class="col-lg-6" style="text-align:right;" >E-Mail :</div>
+                    <div class="col-lg-6"><input type="email" name="email" class="form-control" placeholder="E-Mail" style="width:200px" id="stn"></div>
+                    <div class="col-lg-12" style="margin-top:30px;"></div>
+
+                    <!-- birth -->
+                    <div class="col-lg-6" style="text-align:right;" >Birth Date :</div>
+                    <div class="col-lg-6">
+                        <input type="date" name="birth" id="birth" class="form-control" style="width:200px ; display : inline;" >
+                    </div>
+                    <div class="col-lg-12" style="margin-top:30px;"></div>
+
+                    <!-- address -->
+                    <div class="col-lg-6" style="text-align:right;" >Address :</div>
+                    <div class="col-lg-6"><textarea class="form-control" name="address" rows="3" style="width:250px" placeholder="Address" id="address"></textarea></div>
+                    <div class="col-lg-12" style="margin-top:30px;"></div>
+
+                    <!-- Tel -->
+                    <div class="col-lg-6" style="text-align:right;" >Telephone Number :</div>
+                    <div class="col-lg-6"><input type="text" name="tel" class="form-control" placeholder="0X-XXXX-XXXX" style="width:200px" id="telnum" onkeypress= numCheck();></div>
+                    <div class="col-lg-12" style="margin-top:30px;"></div>
+
+                    <!-- School Name -->
+                    <div class="col-lg-6" style="text-align:right;" >School Name :</div>
+                    <div class="col-lg-6"><input type="text" name="school" class="form-control" placeholder="Ilmi School" style="width:300px" id="telnum" onkeypress= numCheck();></div>
+                    <div class="col-lg-12" style="margin-top:30px;"></div>
+
+
+                   
+                    <div class="col-lg-12" style="text-align:center;margin-top:40px;" >
+                        <input class="btn btn-success" type="submit" name="btsave" value="Register" style="margin-left: 30px">
+                        &nbsp&nbsp&nbsp
+                        <?php echo anchor("index", "<button type='button' class='btn btn-danger'>Cancle</button>"); ?>
                         
-                      ?>
-                   </select>
-                   
-                   
+                    </div>
 
-                    </div>  
-            <div class="col-lg-12" style="text-align:center;margin-top:40px;" >
-                <input class="btn btn-success" type="submit" name="btsave" value="Create & Pay" style="margin-left: 30px">
-                &nbsp&nbsp&nbsp
-                <?php echo anchor("store", "<button type='button' class='btn btn-danger'>Cancle</button>"); ?>
+
+                </div>
+                <!-- end div center -->
+                <div class="col-lg-2"></div>
                 
-            </div>
-            </form>
+
+                
+            <!-- </form> -->
 
             <div>
              <br>
