@@ -21,6 +21,8 @@
 	<link rel="stylesheet" type="text/css" href="../../ilmiproject/asset/css/font-awesome.css" />
 	<link rel="stylesheet" type="text/css" href="../../ilmiproject/asset/css/style.css" />
 
+	<script src="<?=base_url()?>assets/js/script.js"></script>
+
 	<!-- Load jQuery -->
 	<script type="text/javascript" src="../../ilmiproject/asset/js/jquery-1.11.2.min.js"></script>
 
@@ -194,11 +196,42 @@
 				<div class="img-circle">
 					<h1 style="color:#3366ff;text-align: center;margin-bottom: 10%; ">..ILMITUTOR..</h1>
 						<center>
-						<img src="<?=base_url()?>images/icon/pic2.jpg" class="img-circle" alt="howto1" style="border-style: solid;border-width: 3px;width: 200px;height: 200px;border-color: #888888; ">
-						<img src="<?=base_url()?>images/icon/pic4.jpg" class="img-circle" alt="howto1" style="border-style: solid;border-width: 3px;width: 200px;height: 200px ;margin-left: 2% ;margin-bottom: 13%;;border-color: #888888;">
-						<img src="<?=base_url()?>images/icon/pic3.jpg" class="img-circle" alt="howto1" style="border-style: solid;border-width: 3px;width: 200px;height: 200px ;margin-left: 2%;border-color: #888888;">
-						<img src="<?=base_url()?>images/icon/pic1.jpg" class="img-circle" alt="howto1" style="border-style: solid;border-width: 3px;width: 340px;height: 340px ;;margin-left: 2% ;margin-bottom: 5%;;border-color: #888888;">
+
+						<div class="col-lg-1"></div>
+						<div class="col-lg-2" style="margin-top: 3%;">
+							<img id="ciimg" src="<?=base_url()?>images/icon/pic2.jpg" class="img-circle" alt="howto1" style="border-style: solid;border-width: 3px;width: 200px;height: 200px;border-color: #888888; ">
+
+						</div>
+						<div class="col-lg-2"  style="margin-left: 2%; margin-top: 9%;">
+							<img id="ciimg" src="<?=base_url()?>images/icon/pic4.jpg" class="img-circle" alt="howto1" style="border-style: solid;border-width: 3px;width: 200px;height: 200px ;margin-left: 2% ;margin-bottom: 13%;;border-color: #888888;">
+						</div>
+						<div class="col-lg-2" style="margin-left: 2%; margin-top: 3%;">
+							<img id="ciimg" src="<?=base_url()?>images/icon/pic3.jpg" class="img-circle" alt="howto1" style="border-style: solid;border-width: 3px;width: 200px;height: 200px ;margin-left: 2%;border-color: #888888;">
+						</div>
+						<div class="col-lg-4" style="margin-left: 2%;">
+							<img id="ciimg" src="<?=base_url()?>images/icon/pic1.jpg" class="img-circle" alt="howto1" style="border-style: solid;border-width: 3px;width: 340px;height: 340px ;;margin-left: 2% ;margin-bottom: 5%;;border-color: #888888;">
+						</div>
+						<div class="col-lg-1"></div>
+
+						<script>
+							$(document).ready(function(){
+							    $("#ciimg").mouseover(function(){
+							        $("p").css("background-color", "yellow");
+							    });
+							    $("p").mouseout(function(){
+							        $("p").css("background-color", "lightgray");
+							    });
+							});
+						</script>
+						
+						
 						</center>
+
+				
+						
+						
+
+					</div>
 				</div>		
 			</div>
 		</div>
