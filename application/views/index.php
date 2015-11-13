@@ -35,9 +35,9 @@
 
 	<!-- Load custom js for theme -->
 	<script type="text/javascript" src="../../ilmiproject/asset/js/app.js"></script>
-
+			
 </head>
-<body>
+<body style="background: #FFFFCC;">
 	<script type="text/javascript">
 		$(function() {
 		  $('a[href*=#]:not([href=#])').click(function() {
@@ -158,37 +158,44 @@
 
 	<!-- Services section start -->
 
-	<section id="about">
+	<section id="about"style="background: #FFFFCC;">
 		<div class="container">
 			<h1 style="color:#3366ff;text-align: center;margin-bottom: 10%; ">..ABOUT Us..</h1>
 			<div class="row">
-				<div class="col-md-4">
-					<div class="service-item">
-						<div class="icon"><i class="fa fa-book" ></i></div>
-						<h3 style="color:#3366ff">Easy Technic</h3>
-						<p>มีเทคนิคมากมาย และการสอนที่เป็นกันเ
-						</p>
+				<div class="col-md-12">
+					<div class="col-md-4" style="background: #FFFF99;height:100%;">
+						<div class="service-item"style="padding-top: 7%;padding-bottom: 12%;">
+							<div class="icon" ><i class="fa fa-database" ></i></div>
+							<h3 style="color:#3366ff" >Easy&Fast</h3>
+							<p class="sansserif"> รวดเร็ว ว่องไว เข้าใจง่าย เว็บไซค์ของเรามีขั้นตอนและการคำอธิบายการใช้งานที่เข้าใจง่าย อีกทั้งยังมีความรวดเร็วในการประมวลผลเพื่อผู้ใช้งานพึงพอใจกับการใช้งานมากที่สุด
+							</p>
+						</div>
+					</div>
+					
+					<div class="col-md-4"style="background: #FFFF66;height:100%;">
+						<div class="service-item" style="padding-top: 7%;">
+							<div class="icon"><i class="fa fa-book"></i></div>
+							<h3 style="color:#3366ff" >Intermediate</h3>
+							<p>  สื่อกลางสู่การหาประสบการณ์และการเรียนรู้ เว็บไซค์ของเราเป็นสื่อกลางระหว่างติวเตอร์และนักเรียน ติวเตอร์สามารถหาประสบการณ์จากการสอนที่หลากหลาย อีกทั้งนักเรียนยังสามารถหาความรู้ความเข้าใจจากเทคนิกต่างๆของติวเตอร์ที่มีไม่เหมือนกัน เพื่อให้เข้ากับไลฟ์สไตล์ของตัวนักรียนเอง
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-4"style="background: #FFFF99;height:100%;">
+						<div class="service-item"  style="padding-top: 7%;padding-bottom: 18.5%;">
+							<div class="icon"><i class="fa fa-users"></i></div>
+							<h3 style="color:#3366ff">Chance</h3>
+							<p> เปิดโอกาส เปิดช่องทาง สู่ความสำเร็จในสายติวเตอร์ เว็บไซค์ของเราเป็นช่องทางให้กลุ่มติวเตอร์หน้าใหม่ที่ต้องการจะริเริ่มได้มีโอกาสได้มาเริ่มทำงานในสายวิชาชีพติวเตอร์ 
+							</p>
+						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
-					<div class="service-item">
-						<div class="icon"><i class="fa fa-car"></i></div>
-						<h3 style="color:#3366ff">Save Time</h3>
-						<p>สะดวกในการเดินทาง สามารถนัดเรียนตามสถานที่ ที่นักเรียนและติวเตอร์ตกลงกันได้ 
-						</p>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="service-item">
-						<div class="icon"><i class="fa fa-users"></i></div>
-						<h3 style="color:#3366ff">We Know You Want Us</h3>
-						<p>สื่อกลางเครือข่ายการติดต่อระหว่่างติวเตอร์และนักเรียนที่สนใจ คุณสามารถค้นหาวิชาที่สนใจทั้งเรียนหรือสอนได้จากพวกเรา ทางเราคัดสรรบุคคลสมาชิกที่มีตัวตนจริง มีการตรวจสอบก่อนยืนยันการใช้งาน
-						</p>
-					</div>
-				</div>
+				 
+				
 			</div>
 		</div>
 	</section>
+
 	 
 	 <section id="howto" style="background: #F0F0ED;">
 		<div class="container">
@@ -196,35 +203,27 @@
 				<div class="img-circle">
 					<h1 style="color:#3366ff;text-align: center;margin-bottom: 10%; ">..ILMITUTOR..</h1>
 						<center>
-
+						
 						<div class="col-lg-1"></div>
 						<div class="col-lg-2" style="margin-top: 3%;">
 							<img id="ciimg" src="<?=base_url()?>images/icon/pic2.jpg" class="img-circle" alt="howto1" style="border-style: solid;border-width: 3px;width: 200px;height: 200px;border-color: #888888; ">
-
+								<h4 style="color:#3366ff; margin-left: 10%;">อยากเรียนเก่ง</h4>
 						</div>
 						<div class="col-lg-2"  style="margin-left: 2%; margin-top: 9%;">
 							<img id="ciimg" src="<?=base_url()?>images/icon/pic4.jpg" class="img-circle" alt="howto1" style="border-style: solid;border-width: 3px;width: 200px;height: 200px ;margin-left: 2% ;margin-bottom: 13%;;border-color: #888888;">
+								<h3 style="color:#3366ff; margin-left: 20%;">คิดถึง ILMI</h3>
 						</div>
 						<div class="col-lg-2" style="margin-left: 2%; margin-top: 3%;">
 							<img id="ciimg" src="<?=base_url()?>images/icon/pic3.jpg" class="img-circle" alt="howto1" style="border-style: solid;border-width: 3px;width: 200px;height: 200px ;margin-left: 2%;border-color: #888888;">
+								<h4 style="color:#3366ff;margin-left: 20%;">เป็นกันเอง</h4>
 						</div>
 						<div class="col-lg-4" style="margin-left: 2%;">
 							<img id="ciimg" src="<?=base_url()?>images/icon/pic1.jpg" class="img-circle" alt="howto1" style="border-style: solid;border-width: 3px;width: 340px;height: 340px ;;margin-left: 2% ;margin-bottom: 5%;;border-color: #888888;">
+								<h3 style="color:#3366ff;margin-left: 11%;">บรรยากาศการเรียนการสอน</h3>
 						</div>
 						<div class="col-lg-1"></div>
 
-						<script>
-							$(document).ready(function(){
-							    $("#ciimg").mouseover(function(){
-							        $("p").css("background-color", "yellow");
-							    });
-							    $("p").mouseout(function(){
-							        $("p").css("background-color", "lightgray");
-							    });
-							});
-						</script>
-						
-						
+							
 						</center>
 
 				
@@ -255,7 +254,9 @@
 						<li><a href=""><i class="fa fa-dribbble"></i></a></li>
 						<li><a href=""><i class="fa fa-behance"></i></a></li>
 						<li><a href=""><i class="fa fa-pinterest"></i></a></li>
-					</ul>
+						</ul>
+					
+					<h3 style="color:#3366ff; margin-left: 2%">Copyright © 2015 ilmi, All Rights Reserved</h3>
 				</div>
 			</div>
 		</div>
