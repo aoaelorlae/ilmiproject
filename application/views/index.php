@@ -35,6 +35,17 @@
 
 	<!-- Load custom js for theme -->
 	<script type="text/javascript" src="../../ilmiproject/asset/js/app.js"></script>
+	<style>
+	p.italic p.sansserif {
+    font-style: italic;font-family: Arial, Helvetica, sans-serif;
+}
+	p.dashed {border-style: dashed;}
+	p.double {border-style: double;}
+    p.five {
+    border-style: double;
+    border-width: 15px;
+}
+	</style>
 			
 </head>
 <body style="background: #FFFFCC;">
@@ -74,7 +85,8 @@
 		        <ul class="nav navbar-nav">
 		          	<li><a href="#home" style="color: #9d9d9d;" >Home</a></li>
 		          	<li><a href="#about" style="color: #9d9d9d;">About Us</a></li>
-		          	<li><a href="#howto" style="color: #9d9d9d;">How to</a></li>
+		          	<li><a href="#what" style="color: #9d9d9d;">What is ILMI</a></li>
+		          	<li><a href="#gallery" style="color: #9d9d9d;">Gallery</a></li>
 
 
 		        </ul>
@@ -113,14 +125,14 @@
 			<div class="header-info">
 				<h1>ILMI</font>
 				<p><i>ILMI</i>   in Swedish is mean 'Knowledge'<br>
-				<font size=-1>Kingdom of Learning and prepare for yourself to study or increase your score.<br>
-				You can find fit teacher(s) in many lessons and more interested things with us. Come and join!!</font></p>
+				<p class="ansserifs">
+				<p class="italic;ansserifs"><font size=-1>Kingdom of Learning and prepare for yourself to study or increase your score.<br>
+				You can find fit teacher(s) in many lessons and more interested things with us. Come and join!!</font></p></p></p>
 				<!-- <a href="#" class="btn btn-primary">JOIN US</a> -->
 				<button type="button" class="btn btn-info pull-center " data-toggle="modal" data-target="#myModal7" style="margin-right:10px;background-color: yellow;color: #3366ff;">JOIN US</button>
 			</div>
 		</div>
 	</div>
-
 
 	<!-- modal join us -->
 	<div class="modal fade" id="myModal7" role="dialog" >
@@ -152,23 +164,106 @@
     </div>
 
 
+	<section id="about"style="background: #FFFFCC;align: centerheight:100vh;">
+		<div class="container">
+			<h1 style="color:#3366ff;text-align: center;margin-bottom: 2%; ">..ABOUT Us..</h1>
+			<div class="row">
+				<div class="col-md-12" style="margin: 0 auto">
+				<div class="col-md-2"></div>
+					<div class="col-md-4" style="background: #FFFF99;height:100%;">
+						<div class="service-item"style="padding-top: 7%;padding-bottom: 12%;">
+							<p class="five" style="width: 340px;height: 230px ;border-color:#3366ff;">300</p>
+							 <button style="background:#FFFF00;width: 340px;height: 100px ;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal8"><h3 style="color:#3366ff" >STUDEN</h3></button>
+							
+						</div>
+					</div>
+					
+					<div class="col-md-4"style="background: #FFFF66;height:100%;">
+						<div class="service-item" style="padding-top: 7%;padding-bottom: 12%;">
+						<p class="five"style="width: 340px;height: 230px ;border-color:#3366ff;">300</p>
+							<button style="background:#FFFF00;width: 340px;height: 100px ;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal9"><h3 style="color:#3366ff" >TUTOR</h3></button>
+							
+						</div>
+					<div class="col-md-2"></div>
 
+					</div>
+
+<!-- modal join us -->
+	<div class="modal fade" id="myModal8" role="dialog" >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"></button>
+                    <h4 class="modal-title" >Statics STUDENT</h4>
+                </div>
+                <div class="modal-body"style=" text-align: center;height : 220px;">
+                    <div class="col-xs-12" id="status">
+                        <div class="col-xs-6">
+                        	<button type="button" class="btn btn-default" style="background-color: #3366ff;color:white;margin-top: 30%">Register Student</button>
+                        </div>
+                        <div class="col-xs-6">
+                        	<button type="button" class="btn btn-default" style="background-color: #3366ff;color:white;margin-top: 30%">Register Tutor</button>
+                        	
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" style="float : right; margin-right : 20px">Close</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+					
+			<!-- modal join us -->
+	<div class="modal fade" id="myModal9" role="dialog" >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"></button>
+                    <h4 class="modal-title" >Statics TUTOR</h4>
+                </div>
+                <div class="modal-body"style=" text-align: center;height : 220px;">
+                    <div class="col-xs-12" id="status">
+                        <div class="col-xs-6">
+                        	<button type="button" class="btn btn-default" style="background-color: #3366ff;color:white;margin-top: 30%">Register Student</button>
+                        </div>
+                        <div class="col-xs-6">
+                        	<button type="button" class="btn btn-default" style="background-color: #3366ff;color:white;margin-top: 30%">Register Tutor</button>
+                        	
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" style="float : right; margin-right : 20px">Close</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>	
+			</div>
+		</div>
+	</section>
 
 
 
 	<!-- Services section start -->
-
-	<section id="about"style="background: #FFFFCC;">
+	
+	<section id="what"style="background: #FFFFCC;height:100vh;">
 		<div class="container">
-			<h1 style="color:#3366ff;text-align: center;margin-bottom: 10%; ">..ABOUT Us..</h1>
+			<h1 style="color:#3366ff;text-align: center;margin-bottom: 2%; ">What is ILMI</h1>
+			<div style="background-color: #3366ff;height:100px; "></div>
 			<div class="row">
 				<div class="col-md-12">
 					<div class="col-md-4" style="background: #FFFF99;height:100%;">
-						<div class="service-item"style="padding-top: 7%;padding-bottom: 12%;">
+						<div class="service-item"style="padding-top: 7%;">
 							<div class="icon" ><i class="fa fa-database" ></i></div>
 							<h3 style="color:#3366ff" >Easy&Fast</h3>
-							<p class="sansserif"> รวดเร็ว ว่องไว เข้าใจง่าย เว็บไซค์ของเรามีขั้นตอนและการคำอธิบายการใช้งานที่เข้าใจง่าย อีกทั้งยังมีความรวดเร็วในการประมวลผลเพื่อผู้ใช้งานพึงพอใจกับการใช้งานมากที่สุด
-							</p>
+							
 						</div>
 					</div>
 					
@@ -176,17 +271,15 @@
 						<div class="service-item" style="padding-top: 7%;">
 							<div class="icon"><i class="fa fa-book"></i></div>
 							<h3 style="color:#3366ff" >Intermediate</h3>
-							<p>  สื่อกลางสู่การหาประสบการณ์และการเรียนรู้ เว็บไซค์ของเราเป็นสื่อกลางระหว่างติวเตอร์และนักเรียน ติวเตอร์สามารถหาประสบการณ์จากการสอนที่หลากหลาย อีกทั้งนักเรียนยังสามารถหาความรู้ความเข้าใจจากเทคนิกต่างๆของติวเตอร์ที่มีไม่เหมือนกัน เพื่อให้เข้ากับไลฟ์สไตล์ของตัวนักรียนเอง
-							</p>
+							
 						</div>
 					</div>
 
 					<div class="col-md-4"style="background: #FFFF99;height:100%;">
-						<div class="service-item"  style="padding-top: 7%;padding-bottom: 18.5%;">
+						<div class="service-item"  style="padding-top: 7%;">
 							<div class="icon"><i class="fa fa-users"></i></div>
 							<h3 style="color:#3366ff">Chance</h3>
-							<p> เปิดโอกาส เปิดช่องทาง สู่ความสำเร็จในสายติวเตอร์ เว็บไซค์ของเราเป็นช่องทางให้กลุ่มติวเตอร์หน้าใหม่ที่ต้องการจะริเริ่มได้มีโอกาสได้มาเริ่มทำงานในสายวิชาชีพติวเตอร์ 
-							</p>
+							
 						</div>
 					</div>
 				</div>
@@ -197,16 +290,18 @@
 	</section>
 
 	 
-	 <section id="howto" style="background: #F0F0ED;">
+	 <section id="gallery" style="background: #F0F0ED;height:100vh;">
 		<div class="container">
 			<div class="row">
 				<div class="img-circle">
-					<h1 style="color:#3366ff;text-align: center;margin-bottom: 10%; ">..ILMITUTOR..</h1>
+					<h1 style="color:#3366ff;text-align: center;margin-bottom: 2%; ">..ILMITUTOR..</h1>
+
 						<center>
 						
 						<div class="col-lg-1"></div>
 						<div class="col-lg-2" style="margin-top: 3%;">
-							<img id="ciimg" src="<?=base_url()?>images/icon/pic2.jpg" class="img-circle" alt="howto1" style="border-style: solid;border-width: 3px;width: 200px;height: 200px;border-color: #888888; ">
+
+							<p class="dashed" style="border-radius: 100%;width: 210px;height: 210px ;margin-top: 10% "><img id="ciimg" src="<?=base_url()?>images/icon/pic2.jpg" class="img-circle" alt="howto1" style="border-style: solid;border-width: 3px;width: 200px;height: 200px;;align="center"border-color: #888888; "></p>
 								<h4 style="color:#3366ff; margin-left: 10%;">อยากเรียนเก่ง</h4>
 						</div>
 						<div class="col-lg-2"  style="margin-left: 2%; margin-top: 9%;">
@@ -256,7 +351,7 @@
 						<li><a href=""><i class="fa fa-pinterest"></i></a></li>
 						</ul>
 					
-					<h3 style="color:#3366ff; margin-left: 2%">Copyright © 2015 ilmi, All Rights Reserved</h3>
+					<h style="color:#3366ff; margin-left: 2%">Copyright © 2015 ilmi, All Rights Reserved</h>
 				</div>
 			</div>
 		</div>
