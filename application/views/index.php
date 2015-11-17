@@ -48,7 +48,7 @@
 	</style>
 			
 </head>
-<body style="background: #FFFFCC;">
+<body style="background: #FFFFFF;">
 	<script type="text/javascript">
 		$(function() {
 		  $('a[href*=#]:not([href=#])').click(function() {
@@ -83,10 +83,10 @@
 		    <div>
 		      <div class="collapse navbar-collapse col-lg-10" id="myNavbar">
 		        <ul class="nav navbar-nav">
-		          	<li><a href="#home" style="color: #9d9d9d;" >Home</a></li>
-		          	<li><a href="#about" style="color: #9d9d9d;">About Us</a></li>
-		          	<li><a href="#what" style="color: #9d9d9d;">What is ILMI</a></li>
-		          	<li><a href="#gallery" style="color: #9d9d9d;">Gallery</a></li>
+		          	<li><a href="#home" style="color: #BBBBBB;" >Home</a></li>
+		          	<li><a href="#about" style="color: #BBBBBB;">About Us</a></li>
+		          	<li><a href="#what" style="color: #BBBBBB;">What is ILMI</a></li>
+		          	<li><a href="#gallery" style="color: #BBBBBB;">Gallery</a></li>
 
 
 		        </ul>
@@ -164,9 +164,9 @@
     </div>
 
 
-	<section id="about"style="background: #FFFFCC;align: centerheight:100vh;">
+	<section id="about"style="background: white; align:center height:100vh;">
 		<div class="container">
-			<h1 style="color:#3366ff;text-align: center;margin-bottom: 2%; ">..ABOUT Us..</h1>
+			<h1 style="color:#3366ff;text-align: center;margin-bottom: 2%; ">USERS IN ILMITUTOR</h1>
 			<div class="row">
 				<div class="col-md-12" style="margin: 0 auto">
 				<div class="col-md-2"></div>
@@ -196,6 +196,8 @@
                     <button type="button" class="close" data-dismiss="modal"></button>
                     <h4 class="modal-title" >Statics STUDENT</h4>
                 </div>
+
+
                 <div class="modal-body"style=" text-align: center;height : 220px;">
                     <div class="col-xs-12" id="status">
                         <div class="col-xs-6">
@@ -253,7 +255,7 @@
 
 	<!-- Services section start -->
 	
-	<section id="what"style="background: #FFFFCC;height:100vh;">
+	<section id="what"style="background: white;height:100vh;">
 		<div class="container">
 			<h1 style="color:#3366ff;text-align: center;margin-bottom: 2%; ">What is ILMI</h1>
 			<div style="background-color: #3366ff;height:100px; "></div>
@@ -290,7 +292,7 @@
 	</section>
 
 	 
-	 <section id="gallery" style="background: #F0F0ED;height:100vh;">
+	 <section id="gallery" style="background: white;height:100vh;">
 		<div class="container">
 			<div class="row">
 				<div class="img-circle">
@@ -339,7 +341,7 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8">
+				<div class="col-md-4">
 					
 				</div>
 				<div class="col-md-4">
@@ -351,7 +353,7 @@
 						<li><a href=""><i class="fa fa-pinterest"></i></a></li>
 						</ul>
 					
-					<h style="color:#3366ff; margin-left: 2%">Copyright © 2015 ilmi, All Rights Reserved</h>
+					<br><h style="color:#3366ff; margin-left 4%;color:white">Copyright © 2015 ilmi, All Rights Reserved</h>
 				</div>
 			</div>
 		</div>

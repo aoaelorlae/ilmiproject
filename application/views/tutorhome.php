@@ -108,7 +108,7 @@
                     <div class="col-lg-12">
                         <hr style="border-width: 5px;border-color: #3366ff;">
                     </div>
-                    <h2 style="color:#3366ff; margin-left: 165px;font-weight: bold;">TOP RARE</h2>
+                    <h2 style="color:#3366ff; margin-left: 165px;font-weight: bold;">TOP RATE</h2>
                     <p><h4 style="color:#3366ff; margin-left: 165px;font-weight: bold;">วิชายอดนิยมที่เด็กๆ ต้องการติวเตอร์</p></h4>
 
              <center>

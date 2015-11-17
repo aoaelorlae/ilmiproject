@@ -44,7 +44,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#" style ="color:#:;">ILMITUTOR.COM</a>
+                    <a class="navbar-brand" href="#" style ="color:#3366FF;">ILMITUTOR.COM</a>
             </div>
                 
 
@@ -73,7 +73,7 @@
                 		<h1 style="text-align: center;padding-top: 5%">Login</h1>
                 		<input type="email" class="form-control" placeholder="Email" style="width: 80%; margin: 0px auto; margin-top: 5%">
                 		<input type="password" class="form-control" placeholder="Password" style="width: 80%; margin: 0px auto; margin-top: 5%">
-                		<center><button type="submit" class="btn btn-success" style="width: 50%; margin: 0px auto; margin-top: 7%;margin-bottom: 5% ">Login</button></center>
+                		<center><button type="submit" class="btn btn-success" style="width: 30%; margin: 0px auto; margin-top: 7%;margin-bottom: 5% ">OK</button></center>
                 	</div>
                 	<div class="col-lg-4 col-sm-1"></div>
                 
