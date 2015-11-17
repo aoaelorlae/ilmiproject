@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Telekhong</title>
+    <title>Tutorhome</title>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="<?=base_url()?>assets/js/jquery.cropit.js"></script>
@@ -75,11 +75,41 @@
                 <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
                 
             </nav>
-
             <div id="page-wrapper">
                 <div class="container-fluid">
 
+                    <h2 style="color:#3366ff; margin-left: 165px;font-weight: bold;">STEP</h2>
+                   <p><h4 style="color:#3366ff; margin-left: 165px;font-weight: bold;">ขั้นตอนการทำงาน</p></h4>
+                    <div class="col-lg-12">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-8">
+                            <img src='<?=base_url()?>images/icon/step.png'>
+                        </div>
+                        <div class="col-lg-2"></div>
+
+                    </div>
                     
+
+                   
+                    <div class="col-lg-12"style="margin-top: 50px">
+
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-3">
+                            <?php echo anchor("tutorprofile", "<img src='".base_url()."/images/icon/profile.png'>");?>
+                        </div>
+                        <div class="col-lg-3">
+                            <?php echo anchor("tutorlog", "<img src='".base_url()."/images/icon/statistics.png'>");?>
+                        </div>
+                        <div class="col-lg-3">
+                            <?php echo anchor("tutorpayment", "<img src='".base_url()."/images/icon/money.png'>");?>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-12">
+                        <hr style="border-width: 5px;border-color: #3366ff;">
+                    </div>
+                    <h2 style="color:#3366ff; margin-left: 165px;font-weight: bold;">TOP RARE</h2>
+                    <p><h4 style="color:#3366ff; margin-left: 165px;font-weight: bold;">วิชายอดนิยมที่เด็กๆ ต้องการติวเตอร์</p></h4>
 
              <center>
                 <div class="row">
