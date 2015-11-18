@@ -99,13 +99,13 @@
 
                         <div class="col-lg-2"></div>
                         <div class="col-lg-3">
-                            <?php echo anchor("tutorprofile", "<img src='".base_url()."/images/icon/profile.png'>");?>
+                            <?php echo anchor("stuprofile", "<img src='".base_url()."/images/icon/profile.png'>");?>
                         </div>
                         <div class="col-lg-3">
-                            <?php echo anchor("tutorlog", "<img src='".base_url()."/images/icon/my tutor.png'>");?>
+                            <?php echo anchor("stulog", "<img src='".base_url()."/images/icon/mytutor.png'>");?>
                         </div>
                         <div class="col-lg-3">
-                            <?php echo anchor("tutorpayment", "<img src='".base_url()."/images/icon/request.png'>");?>
+                            <?php echo anchor("stupayment", "<img src='".base_url()."/images/icon/request.png'>");?>
                         </div>
 
                     </div>
