@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Telekhong</title>
+    <title>Request </title>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="<?=base_url()?>assets/js/jquery.cropit.js"></script>
@@ -78,7 +78,30 @@
 
             <div id="page-wrapper">
                 <div class="container-fluid">
+                    <div class="col-lg-12">
+                        <div class="col-lg-4"></div>
+                        <div class="col-lg-4">
+                            <h2 style="color:#3366ff;text-align :center ;font-weight: bold;">Request TUTOR</h2>
+                        </div>
+          
+                        <div class="col-lg-4"></div>
+                 </div>
+                   
 
+                <div class="col-lg-12">
+                        <div class="col-lg-2">
+                            <p>วันที่เริ่มเรียน : </p>
+                        </div>
+                        <div class="col-lg-3">
+                            <select class="form-control" name="sex">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                        </div>
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-3"></div>
+                        <div class="col-lg-2"></div>
+                </div>
                     
 
              <center>

@@ -78,9 +78,159 @@
 
             <div id="page-wrapper">
                 <div class="container-fluid">
+            <div class="col-lg-12">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4">
+                    <img src="">
+                    <h2 style="text-align: center;font-weight: bold;" >Profile</h2>
+                </div>
+                <div class="col-lg-12" style="margin-top: 50px">
+                    <!-- space left -->
+                    <div class="col-lg-1"></div>
 
+                    <!-- img left -->
+                    <div class="col-lg-4">
+                        <center><img src="" style="width:150px;height:180px;"></center>
+
+                         <br><br><div class="col-lg-12"></br></br>
                     
+                    </div>
+                    </div>
 
+                    <!-- body center -->
+                    <div class="col-lg-5">
+                        <!-- username -->
+                        <div class="col-lg-12">
+                            <div class="col-lg-4" style="paddind-top: 5px">
+                                <p>Username : </p>
+                            </div>
+                            <div class="col-lg-7">
+                                <input type="text" name="username" class="form-control" value="" disabled style="height: 30px;">
+                            </div>
+                            <div class="col-lg-2"></div>
+                        </div>
+                        <div class="col-lg-12" style="margin-top: 30px"></div>
+
+                        <!-- name -->
+                        <div class="col-lg-12">
+                            <div class="col-lg-4" style="paddind-top: 5px">
+                                <p>Name : </p>
+                            </div>
+                            <div class="col-lg-7">
+                                <input type="text" name="name" class="form-control" value="" style="height: 30px;">
+                            </div>
+                            <div class="col-lg-1"></div>
+                        </div>
+                        <div class="col-lg-12" style="margin-top: 30px"></div>
+
+                        <!-- sex -->
+                        <div class="col-lg-12">
+                            <div class="col-lg-4" style="paddind-top: 5px">
+                                <p>Gender : </p>
+                            </div>
+                            <div class="col-lg-7">
+                                <select class="form-control" name="sex">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-1"></div>
+                        </div>
+                        <div class="col-lg-12" style="margin-top: 30px"></div>
+
+                        <!-- DOB -->
+                        <div class="col-lg-12">
+                            <div class="col-lg-4" style="paddind-top: 5px">
+                                <p>Birth Date : </p>
+                            </div>
+                            <div class="col-lg-7">
+                                <input type="date" name="birth" class="form-control" value="" >
+                            </div>
+                            <div class="col-lg-1"></div>
+                        </div>
+                        <div class="col-lg-12" style="margin-top: 30px"></div>
+
+                        <!-- address -->
+                        <div class="col-lg-12">
+                            <div class="col-lg-4" style="paddind-top: 5px">
+                                <p>Address : </p>
+                            </div>
+                            <div class="col-lg-7">
+                                <textarea cols="3" name="address" class="form-control"></textarea>
+                            </div>
+                            <div class="col-lg-1"></div>
+                        </div>
+                        <div class="col-lg-12" style="margin-top: 30px"></div>
+
+                        <!-- tel -->
+                        <div class="col-lg-12">
+                            <div class="col-lg-4" style="paddind-top: 5px">
+                                <p>Telephone : </p>
+                            </div>
+                            <div class="col-lg-7">
+                                <input type="text" name="tel" class="form-control" value="" style="height: 30px;">
+                            </div>
+                            <div class="col-lg-2"></div>
+                        </div>
+                        <div class="col-lg-12" style="margin-top: 30px"></div>
+
+                        <!-- education -->
+                        <div class="col-lg-12">
+                            <div class="col-lg-4" style="paddind-top: 5px">
+                                <p>Education : </p>
+                            </div>
+                            <div class="col-lg-7">
+                                <textarea cols="3" name="edu" class="form-control"></textarea>
+                            </div>
+                            <div class="col-lg-2"></div>
+                        </div>
+                        <div class="col-lg-12" style="margin-top: 30px"></div>
+
+                        <!-- subject -->
+                        <div class="col-lg-12">
+                            <div class="col-lg-4" style="paddind-top: 5px">
+                                <p>Subject to Teach : </p>
+                            </div>
+                            <div class="col-lg-7">
+                                <textarea cols="3" name="subject" class="form-control"></textarea>
+                            </div>
+                            <div class="col-lg-2"></div>
+                        </div>
+                        <div class="col-lg-12" style="margin-top: 30px"></div>
+
+                        <!-- Detail -->
+                        <div class="col-lg-12">
+                            <div class="col-lg-4" style="paddind-top: 5px">
+                                <p>Detail : </p>
+                            </div>
+                            <div class="col-lg-7">
+                                <textarea cols="3" name="detail" class="form-control"></textarea>
+                            </div>
+                            <div class="col-lg-2"></div>
+                        </div>
+                        <div class="col-lg-12" style="margin-top: 30px"></div>
+
+                        <!-- vdo -->
+                        <div class="col-lg-12">
+                            <div class="col-lg-4" style="paddind-top: 5px">
+                                <p>VDO Preview : </p>
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" name="vdo" class="form-control" value="" style="height: 30px;">
+                            </div>
+                            <div class="col-lg-2"> Youtube URL</div>
+                        </div>
+
+                    </div>
+                   
+                    <div class="col-lg-12">
+                         <br><br><center><button type="button" class="btn btn-primary">Agreement</button>
+                         <button type="button" class="btn btn-primary">OK</button>
+                         <button type="button" class="btn btn-primary">EDIT</button></center></br></br>
+                </div>
+
+
+                
              <center>
                 <div class="row">
                     <div class="col-lg-12">

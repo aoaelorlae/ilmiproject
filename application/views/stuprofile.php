@@ -79,7 +79,130 @@
             <div id="page-wrapper">
                 <div class="container-fluid">
 
-                    
+            <div class="col-lg-12">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4">
+                    <img src="">
+                    <h2 style="text-align: center;font-weight: bold;" >PROFILE</h2>
+                </div>
+            </div>
+
+
+                <div class="col-lg-12" style="margin-top: 50px">
+                    <!-- space left -->
+                    <div class="col-lg-2"></div>
+
+                    <!-- img left -->
+                    <div class="col-lg-3">
+                        <center><img src="" style="width:150px;height:180px;"></center>
+                    </div>
+
+                    <!-- body center -->
+                    <div class="col-lg-5">
+                        <!-- username -->
+                        <div class="col-lg-12">
+                            <div class="col-lg-3" style="paddind-top: 5px">
+                                <p>Username : </p>
+                            </div>
+                            <div class="col-lg-7">
+                                <input type="text" name="username" class="form-control" value="" disabled style="height: 30px;">
+                            </div>
+                            <div class="col-lg-2"></div>
+                        </div>
+                        <div class="col-lg-12" style="margin-top: 30px"></div>
+                        
+                        <!-- name -->
+                        <div class="col-lg-12">
+                            <div class="col-lg-3" style="paddind-top: 5px">
+                                <p>Name : </p>
+                            </div>
+                            <div class="col-lg-7">
+                                <input type="text" name="name" class="form-control" value="" style="height: 30px;">
+                            </div>
+                            <div class="col-lg-2"></div>
+                        </div>
+                        <div class="col-lg-12" style="margin-top: 30px"></div>
+
+                        <!-- sex -->
+                        <div class="col-lg-12">
+                            <div class="col-lg-3" style="paddind-top: 5px">
+                                <p>Gender : </p>
+                            </div>
+                            <div class="col-lg-7">
+                                <select class="form-control" name="sex">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-2"></div>
+                        </div>
+                        <div class="col-lg-12" style="margin-top: 30px"></div>
+
+                        <!-- DOB -->
+                        <div class="col-lg-12">
+                            <div class="col-lg-3" style="paddind-top: 5px">
+                                <p>Birth Date : </p>
+                            </div>
+                            <div class="col-lg-7">
+                                <input type="date" name="birth" class="form-control" value="" >
+                            </div>
+                            <div class="col-lg-2"></div>
+                        </div>
+                        <div class="col-lg-12" style="margin-top: 30px"></div>
+
+                        <!-- address -->
+                        <div class="col-lg-12">
+                            <div class="col-lg-3" style="paddind-top: 5px">
+                                <p>Address : </p>
+                            </div>
+                            <div class="col-lg-7">
+                                <textarea cols="3" name="address" class="form-control"></textarea>
+                            </div>
+                            <div class="col-lg-2"></div>
+                        </div>
+                        <div class="col-lg-12" style="margin-top: 30px"></div>
+
+                        <!-- email -->
+                        <div class="col-lg-12">
+                            <div class="col-lg-3" style="paddind-top: 5px">
+                                <p>Email : </p>
+                            </div>
+                            <div class="col-lg-7">
+                                <input type="text" name="email" class="form-control" value="" style="height: 30px;">
+                            </div>
+                            <div class="col-lg-2"></div>
+                        </div>
+                        <div class="col-lg-12" style="margin-top: 30px"></div>
+
+                        <!-- tel -->
+                        <div class="col-lg-12">
+                            <div class="col-lg-3" style="paddind-top: 5px">
+                                <p>Telephone : </p>
+                            </div>
+                            <div class="col-lg-7">
+                                <input type="text" name="email" class="form-control" value="" style="height: 30px;">
+                            </div>
+                            <div class="col-lg-2"></div>
+                        </div>
+
+
+
+                    </div>
+                    <!-- end body center -->
+                    <div class="col-lg-2"></div>
+                </div>
+
+
+                
+            
+                
+                
+                
+                    <div class="col-lg-12">
+                         <br><br><center><button type="button" class="btn btn-primary">OK</button>
+                         <button type="button" class="btn btn-primary">EDIT</button></center></br></br>
+                </div>
+       
 
              <center>
                 <div class="row">

@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Telekhong</title>
+    <title>Payment</title>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="<?=base_url()?>assets/js/jquery.cropit.js"></script>
@@ -79,7 +79,8 @@
             <div id="page-wrapper">
                 <div class="container-fluid">
 
-                    
+                    <h2 style="color:#3366ff; margin-left: 165px;font-weight: bold;">Payment</h2>
+                   <p><h4 style="color:#3366ff; margin-left: 165px;font-weight: bold;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;นโยบาย ilmitutor.com เราเป็นศูนย์กลางติดต่อของติวเตอร์และนักเรียน และเพื่อการพัฒนาเว็บไซต์ และเป็นผลตอบแทนเล็กน้อยแกพวกเราจึงมีการบังคับจ่ายค่าพื้นที่ของเว็บเล็กน้อย ขอบคุณ</p></h4> 
 
              <center>
                 <div class="row">
