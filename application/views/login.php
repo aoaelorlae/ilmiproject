@@ -30,8 +30,8 @@
 
 
 </head>
-<body>
-		
+<body >	
+
 	<div id="wrapper" style="padding-left: 0px">
 
             <!-- Navigation -->
@@ -44,13 +44,16 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#" style ="color:#3366FF;">ILMITUTOR.COM</a>
+                    <a class="navbar-brand" href="#" style ="color:white;">ILMITUTOR.COM</a>
             </div>
-                
+             <div>
+              <div class="collapse navbar-collapse col-lg-10" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://localhost/ilmiproject/index.php/index" style="color: #BBBBBB;" >Home</a></li>
+                </ul></div>
 
-                <ul class="nav navbar-right top-nav">
-                
-                
+
+                <ul class="nav navbar-right top-nav">             
 
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> First Name <b class="caret"></b></a>
@@ -66,10 +69,10 @@
                 
             </nav>
 
-            <div id="page-wrapper">
+            <div id="page-wrapper" style="background-image: url('<?=base_url()?>images/icon/IMG_5167.jpg');background-size: cover; background-position-y: 90%;">
                 <div class="container-fluid">
                 	<div class="col-lg-4 col-sm-1"></div>
-                	<div class="col-lg-4 col-sm-6" style="background-color: #D7D7D7;border-radius: 30px;height: 30%;margin-top: 10%;">
+                	<div class="col-lg-4 col-sm-6" style="background: rgba(255,255,255,0.65);border-radius: 30px;height: 30%;margin-top: 10%;">
                 		<h1 style="text-align: center;padding-top: 5%">Login</h1>
                 		<input type="email" class="form-control" placeholder="Email" style="width: 80%; margin: 0px auto; margin-top: 5%">
                 		<input type="password" class="form-control" placeholder="Password" style="width: 80%; margin: 0px auto; margin-top: 5%">
@@ -94,7 +97,7 @@
             <div class="col-lg-12">
             <div class="col-lg-12" style="margin-top: 40px">
                <ol class="breadcrumb">
-                <li>You can contact us in this page </li>
+                <li>Contact us in this page </li>
                 <li> wwww.ilmitutor.com</li>
                 <li> King Mongkut's University of Technology Thonburi</li>
              </ol>

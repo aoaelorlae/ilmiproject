@@ -194,16 +194,16 @@ SERVICES
 .service-item .icon i{
 	line-height: 110px;
 	font-size: 45px;	
-	color: #fa694e;
+	color: #ec971f;
 }
 
 .service-item .icon:hover{
-	background-color: yellow;
-	border-color: yellow;
+	background-color: #ec971f;
+	border-color: #ec971f;
 }
 
 .service-item .icon:hover i{
-	color: #3366ff;
+	color: white;
 }
 .service-item h3{
 	margin-bottom: 60px;
@@ -325,16 +325,16 @@ PORTFOLIO
 
 .btn-primary{
 	background: #fa5c58;
-	border-width: 2px;
+	border-width: 4px;
 	color: #fff;
-	border-color: #3366ff;
+	border-color: #ec971f;
 }
 
 .btn-primary:hover,
 .btn-primary:focus{
 	background: yellow;
-	color: #3366ff;
-	border-color: yellow;
+	color: #ec971f;
+	border-color: #3366ff;
 }
 
 

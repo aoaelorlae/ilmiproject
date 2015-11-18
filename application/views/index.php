@@ -43,7 +43,7 @@
 	p.double {border-style: double;}
     p.five {
     border-style: double;
-    border-width: 15px;
+    border-width: 5px;
 }
 	</style>
 			
@@ -84,9 +84,9 @@
 		      <div class="collapse navbar-collapse col-lg-10" id="myNavbar">
 		        <ul class="nav navbar-nav">
 		          	<li><a href="#home" style="color: #BBBBBB;" >Home</a></li>
-		          	<li><a href="#about" style="color: #BBBBBB;">About Us</a></li>
+		          	<li><a href="#about" style="color: #BBBBBB;">Users</a></li>
 		          	<li><a href="#what" style="color: #BBBBBB;">What is ILMI</a></li>
-		          	<li><a href="#gallery" style="color: #BBBBBB;">Gallery</a></li>
+		          	<li><a href="#gallery" style="color: #BBBBBB;">About</a></li>
 
 
 		        </ul>
@@ -105,17 +105,20 @@
 		    </style>
 		        <ul class="nav navbar-right top-nav" >
 		            	<?php
-		            		echo anchor("login", "<button type='button' class='btn btn-info'>Login</button>");
+		            		echo anchor("login", "<button id='butlog' type='button' class='btn btn-info'>Login</button>");
 		            	?>
 		        </ul>
 		        <ul class="nav navbar-right top-nav" >
 		            <li>
-		            	<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal7">Register</button></li>
+		            	<button type="button" class="btn btn-warning" id="butregis" data-toggle="modal" data-target="#myModal7">Register</button></li>
 		            </li>
 		        </ul>
 		        <style type="text/css">
 					ul li:hover {background: #3366FF;}
 					ul li:hover ul {display: block;}
+
+					.btn btn-warning:hover{background-color: #f0ad4e;}
+					.btn btn-info:hover{background-color: #5bc0de;}
 				</style>
 		    </div>
 		  </div>
@@ -129,7 +132,7 @@
 				<p class="italic;ansserifs"><font size=-1>Kingdom of Learning and prepare for yourself to study or increase your score.<br>
 				You can find fit teacher(s) in many lessons and more interested things with us. Come and join!!</font></p></p></p>
 				<!-- <a href="#" class="btn btn-primary">JOIN US</a> -->
-				<button type="button" class="btn btn-info pull-center " data-toggle="modal" data-target="#myModal7" style="margin-right:10px;background-color: yellow;color: #3366ff;">JOIN US</button>
+				<button type="button" class="btn btn-info pull-center " data-toggle="modal" data-target="#myModal7" style="margin-right:10px;background-color: yellow;color:#d58512; border-color: #d58512;">JOIN US</button>
 			</div>
 		</div>
 	</div>
@@ -164,29 +167,52 @@
     </div>
 
 
-	<section id="about"style="background: white; align:center height:100vh;">
+	<section id="about"style="background: white; align:center; height:100vh;">
 		<div class="container">
-			<h1 style="color:#3366ff;text-align: center;margin-bottom: 2%; ">USERS IN ILMITUTOR</h1>
+			<h1 style="color:#ec971f;text-align: center;margin-bottom: 2%; ">USERS IN ILMITUTOR</h1>
+			<p style="color:#ec971f;text-align: center; margin-top:-20px;">จำนวนของนักเรียนและติวเตอร์ที่ใช้งานเว็บไซต์อิลมี่ของเรา</p>
 			<div class="row">
-				<div class="col-md-12" style="margin: 0 auto">
-				<div class="col-md-2"></div>
-					<div class="col-md-4" style="background: #FFFF99;height:100%;">
+				<div class="col-md-12" style="margin-top: 40px;">
+				<div class="col-md-3"></div>
+					<div class="col-md-3" style="background: white;height:100%;">
 						<div class="service-item"style="padding-top: 7%;padding-bottom: 12%;">
-							<p class="five" style="width: 340px;height: 230px ;border-color:#3366ff;">300</p>
-							 <button style="background:#FFFF00;width: 340px;height: 100px ;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal8"><h3 style="color:#3366ff" >STUDEN</h3></button>
+							<p class="five" style="width: 200px;height: 100px ;border-color:#3366ff;margin:auto;">300</p>
+							 <button style="background:#ec971f;width: 200px;height: 85px; margin-top:10px;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal8"><h5 style="color:white" >STUDENT</h></button>
 							
 						</div>
 					</div>
 					
-					<div class="col-md-4"style="background: #FFFF66;height:100%;">
+					<div class="col-md-3"style="background: white;height:100%;">
 						<div class="service-item" style="padding-top: 7%;padding-bottom: 12%;">
-						<p class="five"style="width: 340px;height: 230px ;border-color:#3366ff;">300</p>
-							<button style="background:#FFFF00;width: 340px;height: 100px ;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal9"><h3 style="color:#3366ff" >TUTOR</h3></button>
+						<p class="five"style="width: 200px;height: 100px ;border-color:#3366ff;margin:auto;">300</p>
+							<button style="background:#ec971f;width:200px;height: 85px ; margin-top:10px;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal9"><h5 style="color:white" >TUTOR</h5></button>
 							
 						</div>
-					<div class="col-md-2"></div>
+					<div class="col-md-3"></div>
 
-					</div>
+ 					</div>
+
+ 					<div class="col-md-12" style="margin-top: 130px; ">
+ 						<div class="col-md-4"></div>
+ 						<div class="col-md-4">
+ 						<div class="icon"><i class="fa fa-diamond fa-2" style= "color:#ec971f;"></i>
+ 						<i class="fa fa-diamond fa-2" style= "color:#ec971f;"></i>
+ 						<i class="fa fa-diamond fa-2" style= "color:#ec971f;"></i>
+ 						<i class="fa fa-diamond fa-2" style= "color:#ec971f;"></i>
+ 						<i class="fa fa-diamond fa-2" style= "color:#ec971f;"></i>
+ 						<i class="fa fa-diamond fa-2" style= "color:#ec971f;"></i>
+ 						<i class="fa fa-diamond fa-2" style= "color:#ec971f;"></i>
+ 						<i class="fa fa-diamond fa-2" style= "color:#ec971f;"></i>
+ 						<i class="fa fa-diamond fa-2" style= "color:#ec971f;"></i>
+ 						<i class="fa fa-diamond fa-2" style= "color:#ec971f;"></i>
+ 						<i class="fa fa-diamond fa-2" style= "color:#ec971f;"></i>
+ 						<i class="fa fa-diamond fa-2" style= "color:#ec971f;"></i>
+ 						<i class="fa fa-diamond fa-2" style= "color:#ec971f;"></i>
+ 						<i class="fa fa-diamond fa-2" style= "color:#ec971f;"></i>
+ 						<i class="fa fa-diamond fa-2" style= "color:#ec971f;"></i>
+ 						<i class="fa fa-diamond fa-2" style= "color:#ec971f;"></i>
+ 						</div>
+ 						<div class="col-md-4"></div>
 
 <!-- modal join us -->
 	<div class="modal fade" id="myModal8" role="dialog" >
@@ -258,10 +284,14 @@
 	<section id="what"style="background: white;height:100vh;">
 		<div class="container">
 			<h1 style="color:#3366ff;text-align: center;margin-bottom: 2%; ">What is ILMI</h1>
-			<div style="background-color: #3366ff;height:100px; "></div>
+			<div class="col-md-2"></div>
+			<div class="col-md-8" style="background-color: #3366ff;height:100px; ">
+				<p style="color:white; text-align:center;margin-top: 20px;"> ILMI เป็นสื่อกลางที่นำติวเตอร์และนักเรียนมาอยู่ร่วมกัน เพื่อเปิดโอกาสให้ติวเตอร์หน้าใหม่ได้มาเริ่มธุรกจทางด้านการติวและนักเรียนสามารถหาผู้สอนได้ตามใจชอบ <br>ILMI มีประสิทธิภาพทางด้านการประมวลผลมีความรวดเร็ว สร้างความพึ่งพอใจให้กับผู้ใช้งาน</p>
+			</div>
+			<div class="col-md-2"></div>
 			<div class="row">
 				<div class="col-md-12">
-					<div class="col-md-4" style="background: #FFFF99;height:100%;">
+					<div class="col-md-4" style="height:100%; margin-top:30px;">
 						<div class="service-item"style="padding-top: 7%;">
 							<div class="icon" ><i class="fa fa-database" ></i></div>
 							<h3 style="color:#3366ff" >Easy&Fast</h3>
@@ -269,7 +299,7 @@
 						</div>
 					</div>
 					
-					<div class="col-md-4"style="background: #FFFF66;height:100%;">
+					<div class="col-md-4"style="height:100%;margin-top:30px;">
 						<div class="service-item" style="padding-top: 7%;">
 							<div class="icon"><i class="fa fa-book"></i></div>
 							<h3 style="color:#3366ff" >Intermediate</h3>
@@ -277,7 +307,7 @@
 						</div>
 					</div>
 
-					<div class="col-md-4"style="background: #FFFF99;height:100%;">
+					<div class="col-md-4"style="height:100%;margin-top:30px;">
 						<div class="service-item"  style="padding-top: 7%;">
 							<div class="icon"><i class="fa fa-users"></i></div>
 							<h3 style="color:#3366ff">Chance</h3>
@@ -292,43 +322,13 @@
 	</section>
 
 	 
-	 <section id="gallery" style="background: white;height:100vh;">
-		<div class="container">
+	 <section id="gallery" style="background: white;height:100vh; background-image: url('<?=base_url()?>images/icon/ilmi.jpg');">
+		<div class="container" style="margin:auto;">
 			<div class="row">
-				<div class="img-circle">
-					<h1 style="color:#3366ff;text-align: center;margin-bottom: 2%; ">..ILMITUTOR..</h1>
-
-						<center>
-						
-						<div class="col-lg-1"></div>
-						<div class="col-lg-2" style="margin-top: 3%;">
-
-							<p class="dashed" style="border-radius: 100%;width: 210px;height: 210px ;margin-top: 10% "><img id="ciimg" src="<?=base_url()?>images/icon/pic2.jpg" class="img-circle" alt="howto1" style="border-style: solid;border-width: 3px;width: 200px;height: 200px;;align="center"border-color: #888888; "></p>
-								<h4 style="color:#3366ff; margin-left: 10%;">อยากเรียนเก่ง</h4>
-						</div>
-						<div class="col-lg-2"  style="margin-left: 2%; margin-top: 9%;">
-							<img id="ciimg" src="<?=base_url()?>images/icon/pic4.jpg" class="img-circle" alt="howto1" style="border-style: solid;border-width: 3px;width: 200px;height: 200px ;margin-left: 2% ;margin-bottom: 13%;;border-color: #888888;">
-								<h3 style="color:#3366ff; margin-left: 20%;">คิดถึง ILMI</h3>
-						</div>
-						<div class="col-lg-2" style="margin-left: 2%; margin-top: 3%;">
-							<img id="ciimg" src="<?=base_url()?>images/icon/pic3.jpg" class="img-circle" alt="howto1" style="border-style: solid;border-width: 3px;width: 200px;height: 200px ;margin-left: 2%;border-color: #888888;">
-								<h4 style="color:#3366ff;margin-left: 20%;">เป็นกันเอง</h4>
-						</div>
-						<div class="col-lg-4" style="margin-left: 2%;">
-							<img id="ciimg" src="<?=base_url()?>images/icon/pic1.jpg" class="img-circle" alt="howto1" style="border-style: solid;border-width: 3px;width: 340px;height: 340px ;;margin-left: 2% ;margin-bottom: 5%;;border-color: #888888;">
-								<h3 style="color:#3366ff;margin-left: 11%;">บรรยากาศการเรียนการสอน</h3>
-						</div>
-						<div class="col-lg-1"></div>
-
-							
-						</center>
-
+				
 				
 						
-						
-
-					</div>
-				</div>		
+							
 			</div>
 		</div>
 	</section>
@@ -353,7 +353,7 @@
 						<li><a href=""><i class="fa fa-pinterest"></i></a></li>
 						</ul>
 					
-					<br><h style="color:#3366ff; margin-left 4%;color:white">Copyright © 2015 ilmi, All Rights Reserved</h>
+					<br><h style="color:#3366ff;  margin-left 4%;color:white">Copyright © 2015 ilmi, All Rights Reserved</h>
 				</div>
 			</div>
 		</div>
