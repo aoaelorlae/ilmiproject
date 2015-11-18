@@ -97,12 +97,85 @@
                                     <option value="male">Male</option>
                                     <option value="female">Female</option>
                                 </select>
+                            
+                                
                         </div>
-                        <div class="col-lg-1"></div>
-                        <div class="col-lg-3"></div>
+                        <div class="col-lg-1"><p>ใน</p>
+
+                         </div>
+                        <div class="col-lg-3">
+                            <select class="form-control" name="sex">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+
+                        </div>
                         <div class="col-lg-2"></div>
                 </div>
-                    
+                    <div class="col-lg-12">
+                    <div class="col-lg-2">
+                        <p>วันที่เรียน : </p>
+                       </div> 
+                    <div class="col-lg-1">
+                       <form action="">
+                            <input type="checkbox" name="vehicle" value="Bike">วันจันทร์<br> 
+                        </form> 
+                    </div>
+                    <div class="col-lg-1">
+                       <form action="">
+                            <input type="checkbox" name="vehicle" value="Bike">วันอังคาร<br> 
+                        </form> 
+                    </div>
+                    <div class="col-lg-1">
+                       <form action="">
+                            <input type="checkbox" name="vehicle" value="Bike">วันพุธ<br> 
+                        </form> 
+                    </div>
+                    <div class="col-lg-1">
+                       <form action="">
+                            <input type="checkbox" name="vehicle" value="Bike">วันพฤหัส<br> 
+                        </form> 
+                    </div>
+                    <div class="col-lg-1">
+                       <form action="">
+                            <input type="checkbox" name="vehicle" value="Bike">วันศุกร์<br> 
+                        </form> 
+                    </div>
+                    <div class="col-lg-1">
+                       <form action="">
+                            <input type="checkbox" name="vehicle" value="Bike">วันเสาร์<br> 
+                        </form> 
+                    </div>
+                    <div class="col-lg-1">
+                       <form action="">
+                            <input type="checkbox" name="vehicle" value="Bike">วันอาทิตย์<br> 
+                        </form> 
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+                <div class="col-lg-12">
+                        <div class="col-lg-2">
+                            <p>เวลา : </p>
+                        </div>
+                        <div class="col-lg-3">
+                            <select class="form-control" name="sex">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            
+                                
+                        </div>
+                        <div class="col-lg-1"><p>to</p>
+
+                         </div>
+                        <div class="col-lg-3">
+                            <select class="form-control" name="sex">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+
+                        </div>
+
 
              <center>
                 <div class="row">
