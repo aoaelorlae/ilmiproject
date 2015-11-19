@@ -47,23 +47,12 @@
                     <a class="navbar-brand" href="#" style ="color:white;">ILMITUTOR.COM</a>
             </div>
              <div>
-              <div class="collapse navbar-collapse col-lg-10" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li><a href="http://localhost/ilmiproject/index.php/index" style="color: #BBBBBB;" >Home</a></li>
-                </ul></div>
+              
 
 
                 <ul class="nav navbar-right top-nav">             
 
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> First Name <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
-                        </li>
-                    </ul>
-                </li>
+                
             </ul>
                 <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
                 
