@@ -85,99 +85,126 @@
                         </div>
           
                         <div class="col-lg-4"></div>
-                 </div>
+                    </div>
                    
-
-                <div class="col-lg-12">
-                        <div class="col-lg-2">
-                            <p>วันที่เริ่มเรียน : </p>
-                        </div>
-                        <div class="col-lg-3">
-                            <select class="form-control" name="sex">
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                </select>
-                            
-                                
-                        </div>
-                        <div class="col-lg-1"><p>ใน</p>
-
-                         </div>
-                        <div class="col-lg-3">
-                            <select class="form-control" name="sex">
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                </select>
-
-                        </div>
-                        <div class="col-lg-2"></div>
-                </div>
+                    <div class="col-lg-12" style="margin-top: 30px;"></div>
                     <div class="col-lg-12">
-                    <div class="col-lg-2">
-                        <p>วันที่เรียน : </p>
-                       </div> 
-                    <div class="col-lg-1">
-                       <form action="">
-                            <input type="checkbox" name="vehicle" value="Bike">วันจันทร์<br> 
-                        </form> 
-                    </div>
-                    <div class="col-lg-1">
-                       <form action="">
-                            <input type="checkbox" name="vehicle" value="Bike">วันอังคาร<br> 
-                        </form> 
-                    </div>
-                    <div class="col-lg-1">
-                       <form action="">
-                            <input type="checkbox" name="vehicle" value="Bike">วันพุธ<br> 
-                        </form> 
-                    </div>
-                    <div class="col-lg-1">
-                       <form action="">
-                            <input type="checkbox" name="vehicle" value="Bike">วันพฤหัส<br> 
-                        </form> 
-                    </div>
-                    <div class="col-lg-1">
-                       <form action="">
-                            <input type="checkbox" name="vehicle" value="Bike">วันศุกร์<br> 
-                        </form> 
-                    </div>
-                    <div class="col-lg-1">
-                       <form action="">
-                            <input type="checkbox" name="vehicle" value="Bike">วันเสาร์<br> 
-                        </form> 
-                    </div>
-                    <div class="col-lg-1">
-                       <form action="">
-                            <input type="checkbox" name="vehicle" value="Bike">วันอาทิตย์<br> 
-                        </form> 
-                    </div>
-                    <div class="col-lg-2"></div>
-                </div>
-                <div class="col-lg-12">
-                        <div class="col-lg-2">
-                            <p>เวลา : </p>
+                        <div class="col-lg-2"></div>
+
+                        <div class="col-lg-8">
+                            <!-- startdate -->
+                            <div class="col-lg-12">
+                                <div class="col-lg-3">
+                                    <p>วันที่เริ่มเรียน</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="date" name="start" class="form-control" >
+                                </div>
+                                <div class="col-lg-7"></div>
+                            </div>
+                            <div class="col-lg-12" style="margin-top: 30px;"></div>
+                            <!-- study date -->
+                            <div class="col-lg-12">
+                                <div class="col-lg-3">
+                                    <p>ต้องการเรียนวันไหนบ้าง</p>
+                                </div>
+                                <div class="col-lg-9">
+                                    <input type="checkbox" name="study[]" value="monday"> วันจันทร์
+                                    <input type="checkbox" name="study[]" value="tuesday" style="margin-left: 10px"> วันอังคาร
+                                    <input type="checkbox" name="study[]" value="wednesday" style="margin-left: 10px"> วันพุธ
+                                    <input type="checkbox" name="study[]" value="thursday" style="margin-left: 10px"> วันพฤหัสบดี
+                                    <input type="checkbox" name="study[]" value="friday" style="margin-left: 10px"> วันศุกร์
+                                    <input type="checkbox" name="study[]" value="saterday" style="margin-left: 10px"> วันเสาร์
+                                    <input type="checkbox" name="study[]" value="sunday" style="margin-left: 10px"> วันอาทิตย์
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="margin-top: 30px;"></div>
+
+                            <!-- time -->
+                            <div class="col-lg-12">
+                                <div class="col-lg-3">
+                                    <p>เวลาที่ต้องการเรียน</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="time" name="timestart" class="form-control" >
+                                </div>
+                                <div class="col-lg-1">
+                                    <p style="text-align: center;">ถึง</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="time" name="timeend" class="form-control" >
+                                </div>
+                                <div class="col-lg-3"></div>
+                            </div>
+                            <div class="col-lg-12" style="margin-top: 30px;"></div>
+
+                            <!-- subject -->
+                            <div class="col-lg-12">
+                                <div class="col-lg-3">
+                                    <p>วิชาที่ต้องการเรียน</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="text" name="sub" class="form-control" >
+                                </div>
+                                <div class="col-lg-6"></div>
+                            </div>
+                            <div class="col-lg-12" style="margin-top: 30px;"></div>
+
+                            <!-- level -->
+                            <div class="col-lg-12">
+                                <div class="col-lg-3">
+                                    <p>ระดับชั้น</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="text" name="level" class="form-control" >
+                                </div>
+                                <div class="col-lg-6"></div>
+                            </div>
+                            <div class="col-lg-12" style="margin-top: 30px;"></div>
+
+                            <!-- localtion -->
+                            <div class="col-lg-12">
+                                <div class="col-lg-3">
+                                    <p>บริเวณที่ต้องการเรียน</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <textarea class="form-control" name="location" placeholder="เขตคลองเตย ถนนพระราม4 ซอย 22 กรุณาระบุให้ชัดเจน" cols="3"></textarea>
+                                </div>
+                                <div class="col-lg-5"></div>
+                            </div>
+                            <div class="col-lg-12" style="margin-top: 30px;"></div>
+
+                            <!-- detail -->
+                            <div class="col-lg-12">
+                                <div class="col-lg-3">
+                                    <p>สิ่งที่ต้องการบอกผู้สอน</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <textarea class="form-control" name="detail" placeholder="เรียนค่อนข้างช้า สมาธิสั้น" cols="3"></textarea>
+                                </div>
+                                <div class="col-lg-5"></div>
+                            </div>
+                            <div class="col-lg-12" style="margin-top: 30px;"></div>
+
+                            <!-- submit -->
+                            <div class="col-lg-12">
+                                <div class="col-lg-6">
+                                    <button type="submit" class="btn btn-success" style="margin-left: 10px; float: right;">Submit</button>
+                                </div>
+                                <div class="col-lg-6">
+                                    <?php echo anchor("stuhome","<button type='button' class='btn btn-warning' style='margin-right: 10px; float: left;'>Cancle</button>"); ?>
+                                </div>
+                            </div>
+
+
                         </div>
-                        <div class="col-lg-3">
-                            <select class="form-control" name="sex">
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                </select>
+
+                        <div class="col-lg-2"></div>
+                    </div>
+                    
                             
-                                
-                        </div>
-                        <div class="col-lg-1"><p>to</p>
-
-                         </div>
-                        <div class="col-lg-3">
-                            <select class="form-control" name="sex">
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                </select>
-
-                        </div>
-
-
-             <center>
+                </div>
+            <center>
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="col-lg-12" style="margin-top: 40px">
@@ -185,7 +212,6 @@
                                 <li>Contact us in this page </li>
                                 <li><a href="<?=base_url()?>index.php/index"> www.ilmitutor.com</li></a>
                                 <li> King Mongkut's University of Technology Thonburi</li>
-                            </ol>
                             </ol>
                         </div>
                     </div>

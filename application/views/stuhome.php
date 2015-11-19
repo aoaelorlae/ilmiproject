@@ -104,7 +104,7 @@
 
                             <div class="col-lg-12" style="margin-top: 30px;">
                                 <div class="col-lg-4">
-                                    <?php echo anchor("stupayment", "<img src='".base_url()."/images/icon/request.png'>");?>
+                                    <?php echo anchor("sturequest", "<img src='".base_url()."/images/icon/request.png'>");?>
                                 </div>
                                 <div class="col-lg-8">
                                     <h2 style="font-weight: bold;margin-top: 25px; font-family: Trebuchet MS,Georgia, Serif;"> Request Tutor<br><h4>ส่งคำร้องแก่ติวเตอร์</h4> </h2>
