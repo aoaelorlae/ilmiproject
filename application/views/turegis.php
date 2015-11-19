@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Telekhong</title>
+    <title>Tutor Register</title>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="<?=base_url()?>assets/js/jquery.cropit.js"></script>
@@ -55,22 +55,6 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<?=base_url()?>index.php/store">ILMI TUTOR</a>
-                </div>
-                <ul class="nav navbar-right top-nav">
-                
-                
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> My Name <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-                            <li>
-                                <a href="<?php echo site_url("auth/logout");?>"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-
 
                 <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
                 
@@ -78,8 +62,91 @@
 
             <div id="page-wrapper">
                 <div class="container-fluid">
+                    <center><h1 style="font-weight: bold;">Tutor Register</h1></center>
+                   <!-- <form action="<?php //echo site_url();?>/createstore/create" method="post" accept-charset="utf-8" enctype="multipart/form-data" onsubmit="javascript:return checkfield();"> -->
+                
+                <div class="col-lg-2"></div>
+                <!-- div center -->
+                <div class="col-lg-8">
+                    <div style="text-align:left;margin-left: 20px;"><h3></h3>
+                    <?php echo form_open("sturegis/addstu");?>
+                    <!-- username -->
+                    <div class="col-lg-5" style="text-align:right;" >Username :</div>
+                    <div class="col-lg-7"><input type="text" name="username" class="form-control" placeholder="Username" style="width:200px" id="stn"></div>
+                    <div class="col-lg-12" style="margin-top:30px;"></div>
 
-                    
+                    <!-- password -->
+                    <div class="col-lg-5" style="text-align:right;" >Password :</div>
+                    <div class="col-lg-7"><input type="password" name="pass" class="form-control" placeholder="Password" style="width:200px" id="stn"></div>
+                    <div class="col-lg-12" style="margin-top:30px;"></div>
+
+                    <!-- Name -->
+                    <div class="col-lg-5" style="text-align:right;" >Name :</div>
+                    <div class="col-lg-7"><input type="text" name="name" class="form-control" placeholder="Name" style="width:200px" id="stn"></div>
+                    <div class="col-lg-12" style="margin-top:30px;"></div>
+
+                    <!-- sex -->
+                    <div class="col-lg-5" style="text-align:right;" >Gender :</div>
+                    <div class="col-lg-7">
+                        <select class="form-control col-lg-8" name="sex" style="width:200px ;">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                       </select>
+                    </div>
+                    <div class="col-lg-12" style="margin-top:30px;"></div>
+                    </div>
+
+                    <!-- birth -->
+                    <div class="col-lg-5" style="text-align:right;" >Birth Date :</div>
+                    <div class="col-lg-7">
+                        <input type="date" name="birth" id="birth" class="form-control" style="width:200px ; display : inline;" >
+                    </div>
+                    <div class="col-lg-12" style="margin-top:30px;"></div>
+
+                    <!-- address -->
+                    <div class="col-lg-5" style="text-align:right;" >Address :</div>
+                    <div class="col-lg-7"><textarea class="form-control" name="address" rows="3" style="width:250px" placeholder="Address" id="address"></textarea></div>
+                    <div class="col-lg-12" style="margin-top:30px;"></div>
+
+                    <!-- email -->
+                    <div class="col-lg-5" style="text-align:right;"> E-Mail : </div>
+                    <div class="col-lg-7"><input type="email" name="email" class="form-control" placeholder="E-Mail" style="width:200px" id="stn"></div>
+                    <div class="col-lg-12" style="margin-top:30px;"></div>
+
+                    <!-- Tel -->
+                    <div class="col-lg-5" style="text-align:right;" >Telephone Number :</div>
+                    <div class="col-lg-7"><input type="text" name="tel" class="form-control" placeholder="0X-XXXX-XXXX" style="width:200px" id="telnum" onkeypress= numCheck();></div>
+                    <div class="col-lg-12" style="margin-top:30px;"></div>
+
+                    <!-- Education -->
+                    <div class="col-lg-5" style="text-align:right;" >Education :</div>
+                    <div class="col-lg-7"><input type="text" name="school" class="form-control" placeholder="" style="width:300px" id="education" onkeypress= numCheck();></div>
+                    <div class="col-lg-12" style="margin-top:30px;"></div><hr>
+
+                    <!-- Subject -->
+                    <div class="col-lg-5" style="text-align:right;" >Subject :</div>
+                    <div class="col-lg-7"><input type="text" name="subject" class="form-control" placeholder="Thai, English, Math, ect.," style="width:200px" id="subject" onkeypress= numCheck();></div>
+                    <div class="col-lg-12" style="margin-top:30px;"></div>
+
+                    <!-- Detail -->
+                    <div class="col-lg-5" style="text-align:right;" >Detail :</div>
+                    <div class="col-lg-7"><textarea class="form-control" name="detail" rows="3" style="width:250px" placeholder="Detail" id="detail"></textarea></div>
+                    <div class="col-lg-12" style="margin-top:30px;"></div>
+
+                    <!-- VDO -->
+                    <div class="col-lg-5" style="text-align:right;" >Subject :</div>
+                    <div class="col-lg-7"><input type="text" name="vdo_demo" class="form-control" placeholder="Only Youtube URL" style="width:200px" id="telnum" onkeypress= numCheck();></div>
+                    <div class="col-lg-12" style="margin-top:30px;"></div>
+
+
+                   
+                    <div class="col-lg-12" style="text-align:center;margin-top:40px;" >
+                        <input class="btn btn-success" type="submit" name="btsave" value="Register" style="margin-left: 30px">
+                        &nbsp&nbsp&nbsp
+                        <?php echo anchor("index", "<button type='button' class='btn btn-danger'>Cancle</button>"); ?>
+                        
+                        <?php echo form_close(); ?>
+                    </div>  
 
              <center>
                 <div class="row">

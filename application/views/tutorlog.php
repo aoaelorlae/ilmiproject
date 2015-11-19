@@ -105,7 +105,7 @@
                     <tr>
                         <th scope="row">2</th>
                         <td>Prach Saynatee</td>
-                        <td>Thai</td>
+                        <td>English</td>
                         <td>Jauary,6th 1995</td>
                         <td><button type="button" class="btn btn-info">Click</button></td>
                 </tbody>
