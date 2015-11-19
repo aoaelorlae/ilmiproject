@@ -55,7 +55,9 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<?=base_url()?>index.php/store">ILMI TUTOR</a>
+                    <a class="navbar-brand" href="<?=base_url()?>index.php/index">ILMITUTOR.COM</a>
+                    <ul class="nav navbar-nav">
+                    <li><a href="<?=base_url()?>index.php/stuhome" style="color: #BBBBBB;" >Student Home</a></li></ul>
                 </div>
                 <ul class="nav navbar-right top-nav">
                 
@@ -81,7 +83,7 @@
                     <div class="col-lg-12">
                         <div class="col-lg-4"></div>
                         <div class="col-lg-4">
-                            <h2 style="color:#3366ff;text-align :center ;font-weight: bold;">Request TUTOR</h2>
+                            <h1 style="text-align :center ;font-weight: bold;">REQUEST TUTOR</h1>
                         </div>
           
                         <div class="col-lg-4"></div>

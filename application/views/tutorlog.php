@@ -77,11 +77,42 @@
                 <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
                 
             </nav>
-
             <div id="page-wrapper">
                 <div class="container-fluid">
-
-                    
+                    <center><h1 style="font-weight: bold;">STATISTICS</h1></center>
+        <div class="col-xs-12">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-8">
+            <table class="table table-striped" style="margin-top: 30px;">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Subject</th>
+                        <th>Start Date</th>
+                        <th>Detail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Ratirot Lakdee</td>
+                        <td>Thai</td>
+                        <td>July, 5th 1994</td>
+                        <td><button type="button" class="btn btn-info">Click</button></td>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Prach Saynatee</td>
+                        <td>Thai</td>
+                        <td>Jauary,6th 1995</td>
+                        <td><button type="button" class="btn btn-info">Click</button></td>
+                </tbody>
+            </table>
+            </div>
+            <div class="col-xs-2"></div>
+        </div>
 
              <center>
                 <div class="row">

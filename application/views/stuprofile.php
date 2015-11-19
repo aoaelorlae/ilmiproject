@@ -85,7 +85,7 @@
                 <div class="col-lg-4"></div>
                 <div class="col-lg-4">
                     <img src="">
-                    <h2 style="text-align: center;font-weight: bold;" >PROFILE</h2>
+                    <h1 style="text-align: center;font-weight: bold;" >PROFILE</h1>
                 </div>
             </div>
 
