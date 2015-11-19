@@ -6,9 +6,13 @@ class Tutorlog extends CI_Controller {
         $this->load->helper('url');     
     }   
 
-    public function index()
-    {
-        $this->load->view('tutorlog');
+    public function index(){
+    	if ($this->session->userdata('tuid')!=null ) {
+    		$this->load->view('tutorlog');
+    	}else{
+    		redirect("login");
+    	}
+        
     }
 }
 

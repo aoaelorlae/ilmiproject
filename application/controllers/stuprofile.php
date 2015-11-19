@@ -6,9 +6,13 @@ class Stuprofile extends CI_Controller {
         $this->load->helper('url');     
     }   
 
-    public function index()
-    {
-        $this->load->view('stuprofile');
+    public function index(){
+    	if ($this->session->userdata('stid')!=null ) {
+    		$this->load->view('stuprofile');
+    	}else{
+    		redirect("login");
+    	}
+        
     }
 }
 

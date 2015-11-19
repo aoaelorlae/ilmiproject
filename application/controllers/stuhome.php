@@ -6,9 +6,13 @@ class Stuhome extends CI_Controller {
         $this->load->helper('url');     
     }   
 
-    public function index()
-    {
-        $this->load->view('stuhome');
+    public function index(){
+    	if ($this->session->userdata('stid')!=null ) {
+    		$this->load->view('stuhome');
+    	}else{
+    		redirect("login");
+    	}
+        
     }
 }
 

@@ -6,10 +6,16 @@ class Stulog extends CI_Controller {
         $this->load->helper('url');     
     }   
 
-    public function index()
-    {
-        $this->load->view('stulog');
+    public function index(){
+    	if ($this->session->userdata('stid')!=null ) {
+    		$this->load->view('stulog');
+    	}else{
+    		redirect("login");
+    	}
     }
+
+
+    
 }
 
 ?>

@@ -6,9 +6,14 @@ class Tutorhome extends CI_Controller {
         $this->load->helper('url');     
     }   
 
-    public function index()
-    {
-        $this->load->view('tutorhome');
+    public function index(){
+    	if ($this->session->userdata('tuid')!=null ) {
+    		$this->load->view('tutorhome');
+    	}else{
+    		redirect("login");
+    	}
+
+        
     }
 }
 

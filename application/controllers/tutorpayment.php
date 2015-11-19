@@ -6,9 +6,14 @@ class Tutorpayment extends CI_Controller {
         $this->load->helper('url');     
     }   
 
-    public function index()
-    {
-        $this->load->view('tutorpayment');
+    public function index(){
+    	if ($this->session->userdata('tuid')!=null ) {
+    		$this->load->view('tutorpayment');
+    	}else{
+    		redirect("login");
+    	}
+    	
+        
     }
 }
 

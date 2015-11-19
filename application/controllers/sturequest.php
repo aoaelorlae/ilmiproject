@@ -6,9 +6,13 @@ class Sturequest extends CI_Controller {
         $this->load->helper('url');     
     }   
 
-    public function index()
-    {
-        $this->load->view('sturequest');
+    public function index(){
+    	if ($this->session->userdata('stid')!=null ) {
+    		$this->load->view('sturequest');
+    	}else{
+    		redirect("login");
+    	}
+        
     }
 }
 
