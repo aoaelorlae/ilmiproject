@@ -42,7 +42,7 @@
                 <!-- div center -->
                 <div class="col-lg-8">
                     <div style="text-align:left;margin-left: 20px;"><h3></h3>
-
+                    <?php echo form_open("sturegis/addstu");?>
                     <!-- username -->
                     <div class="col-lg-6" style="text-align:right;" >Username :</div>
                     <div class="col-lg-6"><input type="text" name="username" class="form-control" placeholder="Username" style="width:200px" id="stn"></div>
@@ -66,7 +66,7 @@
                     <!-- sex -->
                     <div class="col-lg-6" style="text-align:right;" >Gender :</div>
                     <div class="col-lg-6">
-                        <select class="form-control col-lg-8" name="pack" style="width:200px ;">
+                        <select class="form-control col-lg-8" name="sex" style="width:200px ;">
                             <option value="male">Male</option>
                             <option value="female">Female</option>
                        </select>
@@ -108,6 +108,7 @@
                         &nbsp&nbsp&nbsp
                         <?php echo anchor("index", "<button type='button' class='btn btn-danger'>Cancle</button>"); ?>
                         
+                        <?php echo form_close(); ?>
                     </div>
 
 
