@@ -6,8 +6,7 @@ class Turegis extends CI_Controller {
         $this->load->helper('url');     
     }   
 
-    public function index()
-    {
+    public function index(){
         $this->load->view('turegis');
     }
 }

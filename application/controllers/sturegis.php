@@ -32,7 +32,7 @@ class Sturegis extends CI_Controller {
     					VALUES ('".$user."', '".$name."', '".$nick."', '".$sex."', '".$birth."', '".$pass."', '".$add."', '".$email."', '".$tel."','".$school."') ";
 
     	$this->db->query($sqladdstu);
-    	echo $this->db->last_query();
+        redirect("login");
 
 
     }
