@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-	<title>Register </title>
+	<title>Login</title>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="<?=base_url()?>assets/js/jquery.cropit.js"></script>
@@ -32,7 +32,7 @@
 </head>
 <body >	
 
-	<div id="wrapper" style="padding-left: 0px">
+	<div id="wrapper" style="padding-left: 0px;">
 
             <!-- Navigation -->
             <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -69,15 +69,22 @@
                 
             </nav>
 
-            <div id="page-wrapper" style="background-image: url('<?=base_url()?>images/icon/IMG_5167.jpg');background-size: cover; background-position-y: 90%;">
+            <div id="page-wrapper" style="background-image: url('<?=base_url()?>images/icon/IMG_5167.jpg');background-size: cover; background-position-y: 90%;height: 80vh">
                 <div class="container-fluid">
                 	<div class="col-lg-4 col-sm-1"></div>
                 	<div class="col-lg-4 col-sm-6" style="background: rgba(255,255,255,0.65);border-radius: 30px;height: 30%;margin-top: 10%;">
                 		<h1 style="text-align: center;padding-top: 5%">Login</h1>
-                		<input type="email" class="form-control" placeholder="Email" style="width: 80%; margin: 0px auto; margin-top: 5%">
-                		<input type="password" class="form-control" placeholder="Password" style="width: 80%; margin: 0px auto; margin-top: 5%">
-                		<center><button type="submit" class="btn btn-success" style="width: 30%; margin: 0px auto; margin-top: 7%;margin-bottom: 5% ">OK</button></center>
-                	</div>
+                        <?php echo form_open("login/loginuser");?>
+                		<input type="text" class="form-control" name="username" placeholder="Username" style="width: 80%; margin: 0px auto; margin-top: 5%">
+                		<input type="password" class="form-control" name="pass" placeholder="Password" style="width: 80%; margin: 0px auto; margin-top: 5%">
+                        <?php 
+                            if ($warn == 1) {
+                                echo "<p style='color: red;'>Username or Password Incorrect</p>";
+                            } 
+                        ?>
+                		<center><button type="submit" class="btn btn-success" style="width: 30%; margin: 0px auto; margin-top: 7%;margin-bottom: 5% ">Login</button></center>
+                	   <?php echo form_close();?>   
+                    </div>
                 	<div class="col-lg-4 col-sm-1"></div>
                 
 	
@@ -92,25 +99,24 @@
            <br>
        </div>
 
-       <center>
-        <div class="row">
-            <div class="col-lg-12">
-            <div class="col-lg-12" style="margin-top: 40px">
-               <ol class="breadcrumb">
-                <li>Contact us in this page </li>
-                <li> wwww.ilmitutor.com</li>
-                <li> King Mongkut's University of Technology Thonburi</li>
-             </ol>
-         </div>
-     </div>
- </center>
+       
  <!-- /.container-fluid -->
 
 </div>
 <!-- /#page-wrapper -->
-    </div>
-</div>
-
+<center>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="col-lg-12" style="margin-top: 40px">
+                        <ol class="breadcrumb">
+                            <li>Contact us in this page </li>
+                            <li> wwww.ilmitutor.com</li>
+                            <li> King Mongkut's University of Technology Thonburi</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </center>
 
 	
 	
