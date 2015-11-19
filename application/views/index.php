@@ -87,8 +87,6 @@
 		          	<li><a href="#about" style="color: #BBBBBB;">Users</a></li>
 		          	<li><a href="#what" style="color: #BBBBBB;">What is ILMI</a></li>
 		          	<li><a href="#gallery" style="color: #BBBBBB;">About</a></li>
-
-
 		        </ul>
 				
 					        
@@ -132,7 +130,7 @@
 				<p class="italic;ansserifs"><font size=-1>Kingdom of Learning and prepare for yourself to study or increase your score.<br>
 				You can find fit teacher(s) in many lessons and more interested things with us. Come and join!!</font></p></p></p>
 				<!-- <a href="#" class="btn btn-primary">JOIN US</a> -->
-				<button type="button" class="btn btn-info pull-center " data-toggle="modal" data-target="#myModal7" style="margin-right:10px;background-color: yellow;color:#d58512; border-color: #d58512;">JOIN US</button>
+				<button type="button" class="btn btn-info pull-center " data-toggle="modal" data-target="#myModal7" style="margin-right:10px;background-color: yellow;color:black; border-color: black;">JOIN US</button>
 			</div>
 		</div>
 	</div>

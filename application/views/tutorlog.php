@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Telekhong</title>
+    <title>Statistics of tutor</title>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="<?=base_url()?>assets/js/jquery.cropit.js"></script>
@@ -55,7 +55,9 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<?=base_url()?>index.php/store">ILMI TUTOR</a>
+                    <a class="navbar-brand" href="<?=base_url()?>index.php/index">ILMITUTOR.COM</a>
+                    <ul class="nav navbar-nav">
+                    <li><a href="<?=base_url()?>index.php/tutorhome" style="color: #BBBBBB;" >Tutor Home</a></li></ul>
                 </div>
                 <ul class="nav navbar-right top-nav">
                 
@@ -86,9 +88,10 @@
                     <div class="col-lg-12">
                         <div class="col-lg-12" style="margin-top: 40px">
                             <ol class="breadcrumb">
-                                <li>You can contact us in this page </li>
-                                <li> facebook : www.facebook.com/Telekhong</li>
-                                <li> KingMongkutt's University of technology thonburi</li>
+                                <li>Contact us in this page </li>
+                                <li><a href="<?=base_url()?>index.php/index"> www.ilmitutor.com</li></a>
+                                <li> King Mongkut's University of Technology Thonburi</li>
+                            </ol>
                             </ol>
                         </div>
                     </div>

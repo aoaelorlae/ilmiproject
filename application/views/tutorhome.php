@@ -55,7 +55,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<?=base_url()?>index.php/store">ILMI TUTOR</a>
+                    <a class="navbar-brand" href="<?=base_url()?>index.php/index">ILMITUTOR.COM</a>
                 </div>
                 <ul class="nav navbar-right top-nav">
                 
@@ -77,36 +77,53 @@
             </nav>
             <div id="page-wrapper">
                 <div class="container-fluid">
+                    <center><h1 style="font-weight: bold; margin-bottom:20px;"> WELCOME</h1></center>
 
-                    <h2 style="color:#3366ff; margin-left: 165px;font-weight: bold;">STEP</h2>
-                   <p><h4 style="color:#3366ff; margin-left: 165px;font-weight: bold;">ขั้นตอนการทำงาน</p></h4>
                     <div class="col-lg-12">
-                        <div class="col-lg-2"></div>
-                        <div class="col-lg-8">
-                            <img src='<?=base_url()?>images/icon/step.png'>
-                        </div>
-                        <div class="col-lg-2"></div>
 
+                        <center>                        
+                        <div class="col-lg-6">
+                        <img src='<?=base_url()?>images/icon/step_3.png'style="float:right;">
+
+                        </div></center>
+                        <div class="col-lg-6">
+                            <div class="col-lg-12" style="margin-top: 50px;margin-left:20px;">
+                                <div class="col-lg-4">
+                                    <?php echo anchor("tutorprofile", "<img src='".base_url()."/images/icon/profile_2.png'>");?>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h2 style="font-weight: bold;margin-top: 25px;font-family: Trebuchet MS,Georgia, Serif;"> Profile<br><h4> ข้อมูลประวัติ</h4> </h2>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12" style="margin-top: 30px;margin-left:20px;">
+                                <div class="col-lg-4">
+                                    <?php echo anchor("tutorlog", "<img src='".base_url()."/images/icon/statistics.png'>");?>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h2 style="font-weight: bold;margin-top: 25px; font-family: Trebuchet MS,Georgia, Serif;"> Statistics<br><h4>สถิติการสอน</h4> </h2>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12"style="margin-top: 30px;margin-left:20px;">
+                                <div class="col-lg-4">
+                                    <?php echo anchor("tutorpayment", "<img src='".base_url()."/images/icon/money.png'>");?>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h2 style="font-weight: bold;margin-top: 25px;font-family: Trebuchet MS,Georgia, Serif;"> Payment<br><h4>รายละเอียดด้านการเงิน </h4></h2>
+                                </div>
+                            </div>
+
+                            
+
+                        </div>
                     </div>
                     
 
                    
-                    <div class="col-lg-12"style="margin-top: 50px">
-
-                        <div class="col-lg-2"></div>
-                        <div class="col-lg-3">
-                            <?php echo anchor("tutorprofile", "<img src='".base_url()."/images/icon/profile.png'>");?>
-                        </div>
-                        <div class="col-lg-3">
-                            <?php echo anchor("tutorlog", "<img src='".base_url()."/images/icon/statistics.png'>");?>
-                        </div>
-                        <div class="col-lg-3">
-                            <?php echo anchor("tutorpayment", "<img src='".base_url()."/images/icon/money.png'>");?>
-                        </div>
-
-                    </div>
+                  
                     <div class="col-lg-12">
-                        <hr style="border-width: 5px;border-color: #3366ff;">
+                        <hr style="border-width: 5px;margin-top:70px;border-color: #d2d3d0;">
                     </div>
                     <h2 style="color:#3366ff; margin-left: 165px;font-weight: bold;">TOP RATE</h2>
                     <p><h4 style="color:#3366ff; margin-left: 165px;font-weight: bold;">วิชายอดนิยมที่เด็กๆ ต้องการติวเตอร์</p></h4>
@@ -116,9 +133,10 @@
                     <div class="col-lg-12">
                         <div class="col-lg-12" style="margin-top: 40px">
                             <ol class="breadcrumb">
-                                <li>You can contact us in this page </li>
-                                <li> facebook : www.facebook.com/Telekhong</li>
-                                <li> KingMongkutt's University of technology thonburi</li>
+                                <li>Contact us in this page </li>
+                                <li><a href="<?=base_url()?>index.php/index"> www.ilmitutor.com</li></a>
+                                <li> King Mongkut's University of Technology Thonburi</li>
+                            </ol>
                             </ol>
                         </div>
                     </div>

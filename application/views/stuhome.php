@@ -57,11 +57,7 @@
                     </button>
                     <a class="navbar-brand" href="<?=base_url()?>index.php/index">ILMITUTOR.COM</a>
             </div>
-             <div>
-              <div class="collapse navbar-collapse col-lg-10" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li><a href="http://localhost/ilmiproject/index.php/index" style="color: #BBBBBB;" >Home</a></li>
-                </ul></div>
+             
                 <ul class="nav navbar-right top-nav">
                 
                 
@@ -80,29 +76,57 @@
                 <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
                 
             </nav>
-
+                
             <div id="page-wrapper">
                 <div class="container-fluid">
 
                     <div id="page-wrapper">
                 <div class="container-fluid">
-
+                    <center><h1 style="font-weight: bold;"> WELCOME</h1></center>
                     
                     <div class="col-lg-12">
                         <center>
                         
-                        <div class="col-lg-5">
-                            <img src='<?=base_url()?>images/icon/step_2.png'>
-                        </div>
-                        <div class="col-lg-7">
-                            <?php echo anchor("stuprofile", "<img src='".base_url()."/images/icon/profile.png'>");?>
-                        
-                            <?php echo anchor("stulog", "<img src='".base_url()."/images/icon/mytutor.png'>");?>
-                        
-                            <?php echo anchor("stupayment", "<img src='".base_url()."/images/icon/request.png'>");?>
+                        <div class="col-lg-6" >
+                            <img src='<?=base_url()?>images/icon/step_2.png'style="float:right;">
+
+                        </div></center>
+
+                        <div class="col-lg-6">
+                            <div class="col-lg-12" style="margin-top: 50px;">
+                                <div class="col-lg-4">
+                                    <?php echo anchor("stuprofile", "<img src='".base_url()."/images/icon/profile.png'>");?>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h2 style="font-weight: bold;margin-top: 25px;font-family: Trebuchet MS,Georgia, Serif;"> Profile<br><h4> ข้อมูลประวัติ</h4> </h2>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12" style="margin-top: 30px;">
+                                <div class="col-lg-4">
+                                    <?php echo anchor("stupayment", "<img src='".base_url()."/images/icon/request.png'>");?>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h2 style="font-weight: bold;margin-top: 25px; font-family: Trebuchet MS,Georgia, Serif;"> Request Tutor<br><h4>ส่งคำร้องแก่ติวเตอร์</h4> </h2>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12"style="margin-top: 30px;">
+                                <div class="col-lg-4">
+                                    <?php echo anchor("stulog", "<img src='".base_url()."/images/icon/mytutor.png'>");?>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h2 style="font-weight: bold;margin-top: 25px;font-family: Trebuchet MS,Georgia, Serif;"> My Tutor<br><h4>ติวเตอร์ที่เคยสอน </h4></h2>
+                                </div>
+                            </div>
+
+                            
+
                         </div>
 
-                    </div></center>
+                        
+
+                    </div>
                     
              <center>
                 <div class="row">

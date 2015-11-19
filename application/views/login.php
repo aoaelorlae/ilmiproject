@@ -99,7 +99,7 @@
                     <div class="col-lg-12" style="margin-top: 40px">
                         <ol class="breadcrumb">
                             <li>Contact us in this page </li>
-                            <li> wwww.ilmitutor.com</li>
+                            <li><a href="<?=base_url()?>index.php/index"> www.ilmitutor.com</li></a>
                             <li> King Mongkut's University of Technology Thonburi</li>
                         </ol>
                     </div>

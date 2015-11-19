@@ -28,7 +28,7 @@ class Login extends CI_Controller {
     	$rsst = $this->db->query($sqlchstu);
 
     	if ($rstu->num_rows() != 0) {
-    		$datatu = $rs->row_array();
+    		$datatu = $rstu->row_array();
     		$artu = array('tuid' => $datatu['tutor_id'] ,
     					'name' => 	$datatu['name'] ,
     					'status' => $datatu['status_id'] ,

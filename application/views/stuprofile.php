@@ -180,7 +180,7 @@
                                 <p>Telephone : </p>
                             </div>
                             <div class="col-lg-7">
-                                <input type="text" name="email" class="form-control" value="" style="height: 30px;">
+                                <input type="text" name="phone" class="form-control" value="" style="height: 30px;">
                             </div>
                             <div class="col-lg-2"></div>
                         </div>
@@ -209,9 +209,10 @@
                     <div class="col-lg-12">
                         <div class="col-lg-12" style="margin-top: 40px">
                             <ol class="breadcrumb">
-                                <li>You can contact us in this page </li>
-                                <li> facebook : www.facebook.com/Telekhong</li>
-                                <li> KingMongkutt's University of technology thonburi</li>
+                                <li>Contact us in this page </li>
+                                <li><a href="<?=base_url()?>index.php/index"> www.ilmitutor.com</li></a>
+                                <li> King Mongkut's University of Technology Thonburi</li>
+                            </ol>
                             </ol>
                         </div>
                     </div>
