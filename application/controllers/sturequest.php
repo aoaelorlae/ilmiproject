@@ -43,7 +43,7 @@ class Sturequest extends CI_Controller {
 
         $this->db->query($sqladdrequest);
 
-        redirect("stuhome")
+        redirect("stuhome");
 
 
     }

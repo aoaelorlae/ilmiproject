@@ -57,6 +57,14 @@ class Login extends CI_Controller {
 		redirect("index");
 	} 
 
+    public function add(){
+        $aradd = array('tuid' => "1" ,
+                        'stid' => "1",
+                        'name' => "first" );
+        $this->session->set_userdata($aradd);
+        redirect("stuhome");
+    }
+
 }
 
 ?>
