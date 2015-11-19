@@ -86,6 +86,8 @@
           
                         <div class="col-lg-4"></div>
                     </div>
+
+                    <?php echo form_open("sturequest/addrequest"); ?>
                    
                     <div class="col-lg-12" style="margin-top: 30px;"></div>
                     <div class="col-lg-12">
@@ -194,6 +196,7 @@
                                 <div class="col-lg-6">
                                     <?php echo anchor("stuhome","<button type='button' class='btn btn-warning' style='margin-right: 10px; float: left;'>Cancle</button>"); ?>
                                 </div>
+                                <?php echo form_close(); ?>
                             </div>
 
 

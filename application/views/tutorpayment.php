@@ -32,7 +32,11 @@
     <script src="<?=base_url()?>assets/js/bootstrap-datetimepicker.js"></script>
     <link href="<?=base_url()?>assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
     <link href="<?=base_url()?>assets/css/bootstrap-datetimepicker.css" rel="stylesheet">
-
+        <style>
+        table, th, td {
+        border: 1px solid black;
+        }
+        </style>
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -55,9 +59,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<?=base_url()?>index.php/index">ILMITUTOR.COM</a>
-                    <ul class="nav navbar-nav">
-                    <li><a href="<?=base_url()?>index.php/tutorhome" style="color: #BBBBBB;" >Tutor Home</a></li></ul>
+                    <a class="navbar-brand" href="<?=base_url()?>index.php/store">ILMI TUTOR</a>
                 </div>
                 <ul class="nav navbar-right top-nav">
                 
@@ -79,29 +81,76 @@
             </nav>
 
             <div id="page-wrapper">
-                <div class="container-fluid">
+                <div class="container-fluid" style="height: 70vh">
+        <div class="col-lg-12">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                    <h2 style="color:#3366ff; margin-left: 165px;font-weight: bold;">Payment</h2>       
+        </div>
+            <div class="col-lg-4"></div>
 
-                    <h2 style="color:#3366ff; margin-left: 165px;font-weight: bold;">Payment</h2>
-                   <p><h4 style="color:#3366ff; margin-left: 165px;font-weight: bold;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;นโยบาย ilmitutor.com เราเป็นศูนย์กลางติดต่อของติวเตอร์และนักเรียน และเพื่อการพัฒนาเว็บไซต์ และเป็นผลตอบแทนเล็กน้อยแกพวกเราจึงมีการบังคับจ่ายค่าพื้นที่ของเว็บเล็กน้อย ขอบคุณ</p></h4> 
+        </div>
 
-             <center>
+        <div class="col-lg-12">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                    <h4 style="color:#3366ff; margin-left: 165px;font-weight: bold; text-align="center"; ">Choose Request</h4>       
+        </div>
+            <div class="col-lg-4"></div>
+
+        </div>
+         <div class="col-lg-12">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                
+                <table class="table table-bordered">
+                    <thead>
+                        <tr style="background-color: #6366ef;">
+                            <th style="text-align: center;">Select</th>
+                            <th style="text-align: center;">Request ID</th>
+                            <th style="text-align: center;">Subject</th>
+                            <th style="text-align: center;">Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;"><input type="radio" name="request" value="1"></td>
+                            <td style="text-align: center;">1</td>
+                            <td style="text-align: center;">Math</td>
+                            <td style="text-align: center;">Rama 2 road</td>
+                        </tr>
+                    </tbody>
+                    
+                    
+                </table>
+            </div>
+
+            </div>
+            <div class="col-lg-2"></div>
+
+
+        </div>
+
+
+
+            
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+        <center>
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="col-lg-12" style="margin-top: 40px">
                             <ol class="breadcrumb">
-                                <li>Contact us in this page </li>
-                                <li><a href="<?=base_url()?>index.php/index"> www.ilmitutor.com</li></a>
-                                <li> King Mongkut's University of Technology Thonburi</li>
-                            </ol>
+                                <li>You can contact us in this page </li>
+                                <li> facebook : www.facebook.com/Telekhong</li>
+                                <li> KingMongkutt's University of technology thonburi</li>
                             </ol>
                         </div>
                     </div>
                 </div>
             </center>
-            <!-- /.container-fluid -->
-
-        </div>
-        <!-- /#page-wrapper -->
     </div>
 <!-- /#wrapper -->
 
