@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Telekhong</title>
+    <title>Profile</title>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="<?=base_url()?>assets/js/jquery.cropit.js"></script>
@@ -55,7 +55,9 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<?=base_url()?>index.php/store">ILMI TUTOR</a>
+                    <a class="navbar-brand" href="<?=base_url()?>index.php/index">ILMITUTOR.COM</a>
+                    <ul class="nav navbar-nav">
+                    <li><a href="<?=base_url()?>index.php/stuhome" style="color: #BBBBBB;" >Student Home</a></li></ul>
                 </div>
                 <ul class="nav navbar-right top-nav">
                 
