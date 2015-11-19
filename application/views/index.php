@@ -170,7 +170,7 @@
 	<section id="about"style="background: white; align:center; height:100vh;">
 		<div class="container">
 			<h1 style="color:#ec971f;text-align: center;margin-bottom: 2%; ">USERS IN ILMITUTOR</h1>
-			<p style="color:#ec971f;text-align: center; margin-top:-20px;">จำนวนของนักเรียนและติวเตอร์ที่ใช้งานเว็บไซต์อิลมี่ของเรา</p>
+			<p style="color:#ec971f;text-align: center; margin-top:-20px;">จำนวนของนักเรียนและติวเตอร์ที่ใช้งานอิลมี่</p>
 			<div class="row">
 				<div class="col-md-12" style="margin-top: 40px;">
 				<div class="col-md-3"></div>
@@ -284,11 +284,11 @@
 	<section id="what"style="background: white;height:100vh;">
 		<div class="container">
 			<h1 style="color:#3366ff;text-align: center;margin-bottom: 2%; ">What is ILMI</h1>
-			<div class="col-md-2"></div>
-			<div class="col-md-8" style="background-color: #3366ff;height:100px; ">
-				<p style="color:white; text-align:center;margin-top: 20px;"> ILMI เป็นสื่อกลางที่นำติวเตอร์และนักเรียนมาอยู่ร่วมกัน เพื่อเปิดโอกาสให้ติวเตอร์หน้าใหม่ได้มาเริ่มธุรกจทางด้านการติวและนักเรียนสามารถหาผู้สอนได้ตามใจชอบ <br>ILMI มีประสิทธิภาพทางด้านการประมวลผลมีความรวดเร็ว สร้างความพึ่งพอใจให้กับผู้ใช้งาน</p>
+			
+			<div class="col-md-12" style="background-color: #3366ff;height:150px; ">
+				<p style="color:white; text-align:center;margin-top: 30px;"> ILMI เป็นสื่อกลางที่นำติวเตอร์และนักเรียนมาอยู่ร่วมกัน เพื่อเปิดโอกาสให้ติวเตอร์หน้าใหม่<br>ได้มาเริ่มธุรกจทางด้านการติวและนักเรียนสามารถหาผู้สอนได้ตามใจชอบ <br>ILMI มีประสิทธิภาพทางด้านการประมวลผลมีความรวดเร็ว<br>สร้างความพึ่งพอใจให้กับผู้ใช้งาน</p>
 			</div>
-			<div class="col-md-2"></div>
+			 
 			<div class="row">
 				<div class="col-md-12">
 					<div class="col-md-4" style="height:100%; margin-top:30px;">

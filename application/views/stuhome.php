@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Telekhong</title>
+    <title>Student Homepage</title>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="<?=base_url()?>assets/js/jquery.cropit.js"></script>
@@ -55,8 +55,13 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<?=base_url()?>index.php/store">ILMI TUTOR</a>
-                </div>
+                    <a class="navbar-brand" href="<?=base_url()?>index.php/index">ILMITUTOR.COM</a>
+            </div>
+             <div>
+              <div class="collapse navbar-collapse col-lg-10" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://localhost/ilmiproject/index.php/index" style="color: #BBBBBB;" >Home</a></li>
+                </ul></div>
                 <ul class="nav navbar-right top-nav">
                 
                 
@@ -82,42 +87,31 @@
                     <div id="page-wrapper">
                 <div class="container-fluid">
 
-                    <h2 style="color:#3366ff; margin-left: 165px;font-weight: bold;">STEP</h2>
-                   <p><h4 style="color:#3366ff; margin-left: 165px;font-weight: bold;">ขั้นตอนการทำงาน</p></h4>
-                    <div class="col-lg-12">
-                        <div class="col-lg-2"></div>
-                        <div class="col-lg-8">
-                            <img src='<?=base_url()?>images/icon/stepstu.png'>
-                        </div>
-                        <div class="col-lg-2"></div>
-
-                    </div>
                     
-
-                   
-                    <div class="col-lg-12"style="margin-top: 50px">
-
-                        <div class="col-lg-2"></div>
-                        <div class="col-lg-3">
+                    <div class="col-lg-12">
+                        <center>
+                        
+                        <div class="col-lg-5">
+                            <img src='<?=base_url()?>images/icon/step_2.png'>
+                        </div>
+                        <div class="col-lg-7">
                             <?php echo anchor("stuprofile", "<img src='".base_url()."/images/icon/profile.png'>");?>
-                        </div>
-                        <div class="col-lg-3">
+                        
                             <?php echo anchor("stulog", "<img src='".base_url()."/images/icon/mytutor.png'>");?>
-                        </div>
-                        <div class="col-lg-3">
+                        
                             <?php echo anchor("stupayment", "<img src='".base_url()."/images/icon/request.png'>");?>
                         </div>
 
-                    </div>
+                    </div></center>
                     
              <center>
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="col-lg-12" style="margin-top: 40px">
                             <ol class="breadcrumb">
-                                <li>You can contact us in this page </li>
-                                <li> facebook : www.facebook.com/Telekhong</li>
-                                <li> KingMongkutt's University of technology thonburi</li>
+                                <li>Contact us in this page </li>
+                                <li><a href="<?=base_url()?>index.php/index"> www.ilmitutor.com</li></a>
+                                <li> King Mongkut's University of Technology Thonburi</li>
                             </ol>
                         </div>
                     </div>
