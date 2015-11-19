@@ -148,7 +148,13 @@
                                     <p>วิชาที่ต้องการเรียน</p>
                                 </div>
                                 <div class="col-lg-3">
-                                    <input type="text" name="sub" class="form-control" >
+                                    <select name="sub" class="form-control">
+                                        <option value="math">คณิตศาสตร์</option>
+                                        <option value="sci">;วิทยาศาสตร์</option>
+                                        <option value="thai">ภาษาไทย</option>
+                                        <option value="social">สังคมศึกษา</option>
+                                        <option value="english">ภาษาอังกฤษ</option>
+                                    </select>
                                 </div>
                                 <div class="col-lg-6"></div>
                             </div>

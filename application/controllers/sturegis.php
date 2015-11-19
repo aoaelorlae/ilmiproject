@@ -9,7 +9,7 @@ class Sturegis extends CI_Controller {
     public function index(){
     	if ($this->session->userdata('stid') != null) {
     		redirect("stuhome");
-    	}elseif ($this->session->userdata('stid') != null) {
+    	}elseif ($this->session->userdata('tuid') != null) {
     		redirect("tuhome");
     	}else{
         	$this->load->view('sturegis');

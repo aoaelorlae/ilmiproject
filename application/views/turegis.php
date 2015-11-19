@@ -69,7 +69,7 @@
                 <!-- div center -->
                 <div class="col-lg-8">
                     <div style="text-align:left;margin-left: 20px;"><h3></h3>
-                    <?php echo form_open("sturegis/addstu");?>
+                    <?php echo form_open("turegis/registutor");?>
                     <!-- username -->
                     <div class="col-lg-5" style="text-align:right;" >Username :</div>
                     <div class="col-lg-7"><input type="text" name="username" class="form-control" placeholder="Username" style="width:200px" id="stn"></div>
@@ -115,17 +115,25 @@
 
                     <!-- Tel -->
                     <div class="col-lg-5" style="text-align:right;" >Telephone Number :</div>
-                    <div class="col-lg-7"><input type="text" name="tel" class="form-control" placeholder="0X-XXXX-XXXX" style="width:200px" id="telnum" onkeypress= numCheck();></div>
+                    <div class="col-lg-7"><input type="text" name="tel" class="form-control" placeholder="0X-XXXX-XXXX" style="width:200px" id="telnum"></div>
                     <div class="col-lg-12" style="margin-top:30px;"></div>
 
                     <!-- Education -->
                     <div class="col-lg-5" style="text-align:right;" >Education :</div>
-                    <div class="col-lg-7"><input type="text" name="school" class="form-control" placeholder="" style="width:300px" id="education" onkeypress= numCheck();></div>
+                    <div class="col-lg-7"><input type="text" name="edu" class="form-control" placeholder="" style="width:300px" id="education"></div>
                     <div class="col-lg-12" style="margin-top:30px;"></div><hr>
 
                     <!-- Subject -->
                     <div class="col-lg-5" style="text-align:right;" >Subject :</div>
-                    <div class="col-lg-7"><input type="text" name="subject" class="form-control" placeholder="Thai, English, Math, ect.," style="width:200px" id="subject" onkeypress= numCheck();></div>
+                    <div class="col-lg-7">
+                        <select name="sub" class="form-control" style="width: 300px">
+                            <option value="math">คณิตศาสตร์</option>
+                            <option value="sci">วิทยาศาสตร์</option>
+                            <option value="thai">ภาษาไทย</option>
+                            <option value="social">สังคมศึกษา</option>
+                            <option value="english">ภาษาอังกฤษ</option>
+                        </select>
+                    </div>
                     <div class="col-lg-12" style="margin-top:30px;"></div>
 
                     <!-- Detail -->
@@ -134,8 +142,8 @@
                     <div class="col-lg-12" style="margin-top:30px;"></div>
 
                     <!-- VDO -->
-                    <div class="col-lg-5" style="text-align:right;" >Subject :</div>
-                    <div class="col-lg-7"><input type="text" name="vdo_demo" class="form-control" placeholder="Only Youtube URL" style="width:200px" id="telnum" onkeypress= numCheck();></div>
+                    <div class="col-lg-5" style="text-align:right;" >URL VDO Demo :</div>
+                    <div class="col-lg-7"><input type="text" name="vdo" class="form-control" placeholder="Only Youtube URL" style="width:200px" id="telnum"></div>
                     <div class="col-lg-12" style="margin-top:30px;"></div>
 
 
