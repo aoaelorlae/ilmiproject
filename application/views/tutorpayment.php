@@ -85,7 +85,34 @@
         <div class="col-lg-12">
             <div class="col-lg-4"></div>
             <div class="col-lg-4">
-                    <h2 style="color:#3366ff; margin-left: 165px;font-weight: bold;">Payment</h2>       
+                    
+                    <Form method="post" action="https://www.paysbuy.com/paynow.aspx">
+                        <div class="col-lg-12" style="margin-top:20px;text-align: center; border-style: solid;border-color:#59AC59;">
+                            <h2 style="color:#3366ff; text-align: center;font-weight: bold;margin-top: 30px;margin-bottom: 30px;">Payment Here</h2> 
+                            <input type="Hidden" Name="psb" value="psb"/> 
+                            <input Type="Hidden" Name="biz" value="panvasa5622@gmail.com"/> 
+                            
+                            
+                            <script type="text/javascript">
+                                window.onload=function(){
+                                    var stoid = '<?php echo $store ?>';
+                                    var setval = 'pack'+stoid+'01';
+                                    $("#inv").attr("value",setval);
+                                }
+                            </script>
+
+                            <!-- inv is Some String text from paysbuy-->
+                            <input Type="Hidden" Name="inv" id="inv" value=""/> 
+                            <input Type="Hidden" Name="itm" value="Service Charge"/> 
+                            
+                            <!-- amt is Store Package Charge--> 
+                            <input Type="Hidden" Name="amt" value="1" id="price"/>
+                            
+                            <!-- Redirect Web Controller-->
+                            <input Type="Hidden" Name="postURL" value="http://www.ilmitutor.com/index.php/tutorpayment/checkpayment"/> 
+                            <input type="image" style="margin-bottom: 30px;" src="https://www.paysbuy.com/imgs/L_click2buy.gif" border="0" name="submit" alt="Make it easier,PaySbuy - it's fast,free and secure!"/> 
+                        </div>
+                    </Form>      
         </div>
             <div class="col-lg-4"></div>
 
@@ -94,31 +121,47 @@
         <div class="col-lg-12">
             <div class="col-lg-4"></div>
             <div class="col-lg-4">
-                    <h4 style="color:#3366ff; margin-left: 165px;font-weight: bold; text-align="center"; ">Choose Request</h4>       
+                    <h4 style="color:#3366ff; font-weight: bold; text-align: center; ">Choose Request</h4>       
         </div>
             <div class="col-lg-4"></div>
 
         </div>
          <div class="col-lg-12">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-8">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
                 
                 <table class="table table-bordered">
                     <thead>
                         <tr style="background-color: #6366ef;">
                             <th style="text-align: center;">Select</th>
-                            <th style="text-align: center;">Request ID</th>
-                            <th style="text-align: center;">Subject</th>
+                            <th style="text-align: center;">No</th>
+                            <th style="text-align: center;">Study Day</th>
+                            <th style="text-align: center;">Start Date</th>
+                            <th style="text-align: center;">Time</th>
                             <th style="text-align: center;">Location</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td style="text-align: center;"><input type="radio" name="request" value="1"></td>
-                            <td style="text-align: center;">1</td>
-                            <td style="text-align: center;">Math</td>
-                            <td style="text-align: center;">Rama 2 road</td>
-                        </tr>
+
+                    <?php 
+                        $no = 1;
+                        foreach ($re as $r) {
+                            if ($r['subject'] === $tu['subject']) {
+                                echo "<tr>";
+                                echo "<td style='text-align: center;'><input type='radio'  name='request' value='".$r['request_id']."'></td>";
+                                echo "<td style='text-align: center;'>".$no."</td>";
+                                echo "<td style='text-align: center;'>".$r['student_date']."</td>";
+                                echo "<td style='text-align: center;'>".$r['start_date']."</td>";
+                                echo "<td style='text-align: center;'>".$r['time']."</td>";
+                                echo "<td style='text-align: center;'>".$r['location']."</td>";
+                                echo "</tr>";
+                                $no++;
+                            }
+                        }
+
+
+                    ?>
+
                     </tbody>
                     
                     
@@ -126,7 +169,7 @@
             </div>
 
             </div>
-            <div class="col-lg-2"></div>
+            <div class="col-lg-1"></div>
 
 
         </div>
