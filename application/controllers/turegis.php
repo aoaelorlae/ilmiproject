@@ -34,6 +34,25 @@ class Turegis extends CI_Controller {
     				VALUES ('".$user."', '".$pass."', '".$name."', '".$sex."', '".$birth."', '".$address."', '".$email."', '".$tel."', '".$edu."', '".$sub."', '".$detail."', '".$vdo."') ";
 
     	$this->db->query($sqlregis);
+        $sqlaa = "select * from request";
+        $this->db->query($sqlaa);
+        $sqlaa = "select * from user_tutor";
+        $this->db->query($sqlaa);
+        $sqlaa = "select * from user_student";
+        $this->db->query($sqlaa);
+
+        $sqlgettuid = "select * from user_tutor where username = '".$user."' and password = '".$pass."' and name = '".$name."' ";
+        $rs = $this->db->query($sqlgettuid)->row_array();
+        $tuid = $rs['tutor_id'];
+
+        $image_data = $this->input->post("image-data");
+        if ($image_data !=""){
+            $data = base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $image_data));     
+            file_put_contents('images/tutor/tutor-'.$tuid.'.jpg', $data);
+            $newname = "tutor-".$tuid.".jpg";
+            $sqlupdate = "update user_tutor SET pic ='".$newname."' WHERE tutor_id = '".$tuid."'";
+            $this->db->query($sqlupdate);
+        }
     	// echo $this->db->last_query();
 
     	redirect("login");

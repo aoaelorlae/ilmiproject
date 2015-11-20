@@ -49,16 +49,12 @@
             <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="<?=base_url()?>index.php/index">ILMITUTOR.COM</a>
+                    <a class="navbar-brand" href="<?=base_url()?>index.php/index" style ="color:white;"><img src="<?=base_url()?>images/icon/logo3.png" style="height: 30px; width: auto;"></a>
                     <ul class="nav navbar-nav">
                     <li><a href="<?=base_url()?>index.php/stuhome" style="color: #BBBBBB;" >Student Home</a></li></ul>
                 </div>
+
+
                 <ul class="nav navbar-right top-nav">
                 
                 
@@ -80,39 +76,39 @@
 
             <div id="page-wrapper">
                 <div class="container-fluid">
-                    <div class="col-lg-12">
-                        <div class="col-lg-4"></div>
-                        <div class="col-lg-4">
+                    <div class="col-lg-12 col-xs-12">
+                        <div class="col-lg-4 col-xs-1"></div>
+                        <div class="col-lg-4 col-xs-10">
                             <h1 style="text-align :center ;font-weight: bold;">REQUEST TUTOR</h1>
                         </div>
           
-                        <div class="col-lg-4"></div>
+                        <div class="col-lg-4 col-xs-1"></div>
                     </div>
 
                     <?php echo form_open("sturequest/addrequest"); ?>
                    
-                    <div class="col-lg-12" style="margin-top: 30px;"></div>
-                    <div class="col-lg-12">
-                        <div class="col-lg-2"></div>
+                    <div class="col-lg-12 col-xs-12" style="margin-top: 30px;"></div>
+                    <div class="col-lg-12 col-xs-12">
+                        <div class="col-lg-2 col-xs-1"></div>
 
-                        <div class="col-lg-8">
+                        <div class="col-lg-8 col-xs-10">
                             <!-- startdate -->
-                            <div class="col-lg-12">
-                                <div class="col-lg-3">
+                            <div class="col-lg-12 col-xs-12">
+                                <div class="col-lg-3 col-xs-4">
                                     <p>วันที่เริ่มเรียน</p>
                                 </div>
-                                <div class="col-lg-3">
+                                <div class="col-lg-3 col-xs-7">
                                     <input type="date" name="start" class="form-control" >
                                 </div>
-                                <div class="col-lg-7"></div>
+                                <div class="col-lg-7 col-xs-1"></div>
                             </div>
-                            <div class="col-lg-12" style="margin-top: 30px;"></div>
+                            <div class="col-lg-12 col-xs-12" style="margin-top: 30px;"></div>
                             <!-- study date -->
-                            <div class="col-lg-12">
-                                <div class="col-lg-3">
+                            <div class="col-lg-12 col-xs-12">
+                                <div class="col-lg-3 col-xs-12">
                                     <p>ต้องการเรียนวันไหนบ้าง</p>
                                 </div>
-                                <div class="col-lg-9">
+                                <div class="col-lg-9 col-xs-10">
                                     <input type="checkbox" name="study[]" value="monday"> วันจันทร์
                                     <input type="checkbox" name="study[]" value="tuesday" style="margin-left: 10px"> วันอังคาร
                                     <input type="checkbox" name="study[]" value="wednesday" style="margin-left: 10px"> วันพุธ
@@ -122,32 +118,32 @@
                                     <input type="checkbox" name="study[]" value="sunday" style="margin-left: 10px"> วันอาทิตย์
                                 </div>
                             </div>
-                            <div class="col-lg-12" style="margin-top: 30px;"></div>
+                            <div class="col-lg-12 col-xs-12" style="margin-top: 30px;"></div>
 
                             <!-- time -->
-                            <div class="col-lg-12">
-                                <div class="col-lg-3">
+                            <div class="col-lg-12 col-xs-12">
+                                <div class="col-lg-3 col-xs-12">
                                     <p>เวลาที่ต้องการเรียน</p>
                                 </div>
-                                <div class="col-lg-3">
+                                <div class="col-lg-3 col-xs-5">
                                     <input type="time" name="timestart" class="form-control" >
                                 </div>
-                                <div class="col-lg-1">
+                                <div class="col-lg-1 col-xs-1">
                                     <p style="text-align: center;">ถึง</p>
                                 </div>
-                                <div class="col-lg-3">
+                                <div class="col-lg-3 col-xs-5">
                                     <input type="time" name="timeend" class="form-control" >
                                 </div>
                                 <div class="col-lg-3"></div>
                             </div>
-                            <div class="col-lg-12" style="margin-top: 30px;"></div>
+                            <div class="col-lg-12 col-xs-12" style="margin-top: 30px;"></div>
 
                             <!-- subject -->
-                            <div class="col-lg-12">
-                                <div class="col-lg-3">
+                            <div class="col-lg-12 col-xs-12">
+                                <div class="col-lg-3 col-xs-6">
                                     <p>วิชาที่ต้องการเรียน</p>
                                 </div>
-                                <div class="col-lg-3">
+                                <div class="col-lg-3 col-xs-6">
                                     <select name="sub" class="form-control">
                                         <option value="math">คณิตศาสตร์</option>
                                         <option value="sci">;วิทยาศาสตร์</option>
@@ -158,19 +154,19 @@
                                 </div>
                                 <div class="col-lg-6"></div>
                             </div>
-                            <div class="col-lg-12" style="margin-top: 30px;"></div>
+                            <div class="col-lg-12 col-xs-12" style="margin-top: 30px;"></div>
 
                             <!-- level -->
-                            <div class="col-lg-12">
-                                <div class="col-lg-3">
+                            <div class="col-lg-12 col-xs-12">
+                                <div class="col-lg-3 col-xs-5">
                                     <p>ระดับชั้น</p>
                                 </div>
-                                <div class="col-lg-3">
+                                <div class="col-lg-3 col-xs-7">
                                     <input type="text" name="level" class="form-control" >
                                 </div>
                                 <div class="col-lg-6"></div>
                             </div>
-                            <div class="col-lg-12" style="margin-top: 30px;"></div>
+                            <div class="col-lg-12 col-xs-12" style="margin-top: 30px;"></div>
 
                             <!-- localtion -->
                             <div class="col-lg-12">
@@ -197,11 +193,11 @@
                             <div class="col-lg-12" style="margin-top: 30px;"></div>
 
                             <!-- submit -->
-                            <div class="col-lg-12">
-                                <div class="col-lg-6">
+                            <div class="col-lg-12 col-xs-12">
+                                <div class="col-lg-6 col-xs-6">
                                     <button type="submit" class="btn btn-success" style="margin-left: 10px; float: right;">Submit</button>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-6 col-xs-6">
                                     <?php echo anchor("stuhome","<button type='button' class='btn btn-warning' style='margin-right: 10px; float: left;'>Cancle</button>"); ?>
                                 </div>
                                 <?php echo form_close(); ?>

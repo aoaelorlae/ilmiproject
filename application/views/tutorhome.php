@@ -33,6 +33,10 @@
     <link href="<?=base_url()?>assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
     <link href="<?=base_url()?>assets/css/bootstrap-datetimepicker.css" rel="stylesheet">
 
+    <!-- Morris Charts JavaScript -->
+    <script src="<?=base_url()?>assets/js/plugins/morris/raphael.min.js"></script>
+    <script src="<?=base_url()?>assets/js/plugins/morris/morris.min.js"></script>
+
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -49,13 +53,7 @@
             <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="<?=base_url()?>index.php/index">ILMITUTOR.COM</a>
+                    <a class="navbar-brand" href="<?=base_url()?>index.php/index" style ="color:white;"><img src="<?=base_url()?>images/icon/logo3.png" style="height: 30px; width: auto;"></a>
                 </div>
                 <ul class="nav navbar-right top-nav">
                 
@@ -79,37 +77,37 @@
                 <div class="container-fluid">
                     <center><h1 style="font-weight: bold; margin-bottom:20px;"> WELCOME</h1></center>
 
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 col-xs-12">
 
                         <center>                        
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-xs-12">
                         <img src='<?=base_url()?>images/icon/step_3.png'style="float:right;">
 
                         </div></center>
-                        <div class="col-lg-6">
-                            <div class="col-lg-12" style="margin-top: 50px;margin-left:20px;">
-                                <div class="col-lg-4">
+                        <div class="col-lg-6 col-xs-12">
+                            <div class="col-lg-12 col-xs-12" style="margin-top: 50px;margin-left:20px;">
+                                <div class="col-lg-4 col-xs-6">
                                     <?php echo anchor("tutorprofile", "<img src='".base_url()."/images/icon/profile_2.png'>");?>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-8 col-xs-6">
                                     <h2 style="font-weight: bold;margin-top: 25px;font-family: Trebuchet MS,Georgia, Serif;"> Profile<br><h4> ข้อมูลประวัติ</h4> </h2>
                                 </div>
                             </div>
 
-                            <div class="col-lg-12" style="margin-top: 30px;margin-left:20px;">
-                                <div class="col-lg-4">
+                            <div class="col-lg-12 col-xs-12" style="margin-top: 30px;margin-left:20px;">
+                                <div class="col-lg-4 col-xs-6">
                                     <?php echo anchor("tutorlog", "<img src='".base_url()."/images/icon/statistics.png'>");?>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-8 col-xs-6">
                                     <h2 style="font-weight: bold;margin-top: 25px; font-family: Trebuchet MS,Georgia, Serif;"> Statistics<br><h4>สถิติการสอน</h4> </h2>
                                 </div>
                             </div>
 
-                            <div class="col-lg-12"style="margin-top: 30px;margin-left:20px;">
-                                <div class="col-lg-4">
+                            <div class="col-lg-12 col-xs-12" style="margin-top: 30px;margin-left:20px;">
+                                <div class="col-lg-4 col-xs-6">
                                     <?php echo anchor("tutorpayment", "<img src='".base_url()."/images/icon/money.png'>");?>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-8 col-xs-6">
                                     <h2 style="font-weight: bold;margin-top: 25px;font-family: Trebuchet MS,Georgia, Serif;"> Payment<br><h4>รายละเอียดด้านการเงิน </h4></h2>
                                 </div>
                             </div>
@@ -122,16 +120,57 @@
 
                    
                   
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 col-xs-12">
                         <hr style="border-width: 5px;margin-top:70px;border-color: #d2d3d0;">
                     </div>
-                    <h2 style="color:#3366ff; margin-left: 165px;font-weight: bold;">TOP RATE</h2>
-                    <p><h4 style="color:#3366ff; margin-left: 165px;font-weight: bold;">วิชายอดนิยมที่เด็กๆ ต้องการติวเตอร์</p></h4>
+                    <div class="col-lg-12 col-xs-12">
+                        <div class="col-lg-12 col-xs-12">
+                            <h2 style="color:#3366ff; margin-left: 165px;font-weight: bold;">TOP RATE</h2>
+                            <h4 style="color:#3366ff; margin-left: 165px;font-weight: bold;">วิชายอดนิยมที่เด็กๆ ต้องการติวเตอร์</h4>
+                        </div>
+                        <div class="col-lg-3"></div>
+                        <div class="col-lg-6 col-xs-12">
+                            <div id="morris-bar-chart"></div>
+                        </div>
+                    </div>
+
+
+                    <script type="text/javascript">
+                        $(function() {
+                            Morris.Bar({
+                                element: 'morris-bar-chart',
+                                data: [{
+                                    device: 'คณิตศาสตร์',
+                                    geekbench: <?php echo $tu1->num_rows() ?>
+                                }, {
+                                    device: 'วิทยาศาสตร์',
+                                    geekbench: <?php echo $tu2->num_rows() ?>
+                                }, {
+                                    device: 'ภาษาไทย',
+                                    geekbench: <?php echo $tu3->num_rows() ?>
+                                }, {
+                                    device: 'สังคมศึกษา',
+                                    geekbench: <?php echo $tu4->num_rows() ?>
+                                }, {
+                                    device: 'ภาษาอังกฤษ',
+                                    geekbench: <?php echo $tu5->num_rows() ?>
+                                }],
+                                xkey: 'device',
+                                ykeys: ['geekbench'],
+                                labels: ['Students'],
+                                barRatio: 0.4,
+                                xLabelAngle: 35,
+                                hideHover: 'auto',
+                                resize: true
+                            });
+                        });
+                    </script>
+                    
 
              <center>
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="col-lg-12" style="margin-top: 40px">
+                    <div class="col-lg-12 col-xs-12">
+                        <div class="col-lg-12 col-xs-12" style="margin-top: 40px">
                             <ol class="breadcrumb">
                                 <li>Contact us in this page </li>
                                 <li><a href="<?=base_url()?>index.php/index"> www.ilmitutor.com</li></a>

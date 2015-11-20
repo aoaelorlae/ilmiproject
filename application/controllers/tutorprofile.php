@@ -17,22 +17,23 @@ class Tutorprofile extends CI_Controller {
     	}
     }
 
-    public function edit($id){
-
-      $data = array(
+    public function edit(){
+        $id = $this->session->userdata('tuid');
+        $data = array(
                 'name' => $this->input->post('name'),
-                'sex' => $this->post('sex'),
-                'birth' => $this->post('birth'),
-                'address' => $this->post('address'),
-                'tel' => $this->post('tel'),
-                'education' => $this->post('edu'),
-                'subject' => $this->post('subject'),
-                'other_info' => $this->post('detail'),
-                'vdo' => $this->post('vdo')
+                'sex' => $this->input->post('sex'),
+                'birth' => $this->input->post('birth'),
+                'address' => $this->input->post('address'),
+                'tel' => $this->input->post('tel'),
+                'tu_email' => $this->input->post('email'),
+                'education' => $this->input->post('edu'),
+                'subject' => $this->input->post('subject'),
+                'other_info' => $this->input->post('detail'),
+                'vdo' => $this->input->post('vdo')
             );
-      $this->db->where('tutor_id',$id);
-      $this->db->update('user_tutor',$data);
-      $this->index();
-      }
+        $this->db->where('tutor_id',$id);
+        $this->db->update('user_tutor',$data);
+        redirect("tutorprofile");
+    }
 }
 ?>

@@ -49,13 +49,7 @@
             <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="<?=base_url()?>index.php/index">ILMITUTOR.COM</a>
+                    <a class="navbar-brand" href="<?=base_url()?>index.php/index" style ="color:white;"><img src="<?=base_url()?>images/icon/logo3.png" style="height: 30px; width: auto;"></a>
                     <ul class="nav navbar-nav">
                     <li><a href="<?=base_url()?>index.php/tutorhome" style="color: #BBBBBB;" >Tutor Home</a></li></ul>
                 </div>
@@ -92,13 +86,13 @@
 
                     <!-- img left -->
                     <div class="col-lg-4">
-                        <center><img src="" style="width:150px;height:180px;"></center>
+                        <center><img src="<?=base_url()?>images/tutor/<?php echo $profile['pic']; ?>" style="width:150px;height:180px;"></center>
 
                          <br><br><div class="col-lg-12"></br></br>
                     
                     </div>
                     </div>
-
+                    <?php echo form_open('tutorprofile/edit'); ?>
                     <!-- body center -->
                     <div class="col-lg-5">
                         <!-- username -->
@@ -107,7 +101,7 @@
                                 <p>Username : </p>
                             </div>
                             <div class="col-lg-7">
-                                <input type="text" name="username" class="form-control" value="" disabled style="height: 30px;">
+                                <input type="text" name="username" class="form-control" value="<?php echo $profile['username']; ?>" disabled style="height: 30px;">
                             </div>
                             <div class="col-lg-2"></div>
                         </div>
@@ -119,7 +113,7 @@
                                 <p>Name : </p>
                             </div>
                             <div class="col-lg-7">
-                                <input type="text" name="name" class="form-control" value="" style="height: 30px;">
+                                <input type="text" name="name" class="form-control" value="<?php echo $profile['name']; ?>" style="height: 30px;">
                             </div>
                             <div class="col-lg-1"></div>
                         </div>
@@ -132,8 +126,16 @@
                             </div>
                             <div class="col-lg-7">
                                 <select class="form-control" name="sex">
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
+                                    <?php 
+                                        $gen = $profile['sex'];
+                                        if ($gen === "male") {
+                                            echo "<option value='male' selected>Male</option>";
+                                            echo "<option value='female'>Female</option>";
+                                        }else{
+                                            echo "<option value='male'>Male</option>";
+                                            echo "<option value='female' selected>Female</option>";
+                                        }
+                                    ?>
                                 </select>
                             </div>
                             <div class="col-lg-1"></div>
@@ -146,7 +148,7 @@
                                 <p>Birth Date : </p>
                             </div>
                             <div class="col-lg-7">
-                                <input type="date" name="birth" class="form-control" value="" >
+                                <input type="date" name="birth" class="form-control" value="<?php echo $profile['birth']; ?>" >
                             </div>
                             <div class="col-lg-1"></div>
                         </div>
@@ -158,7 +160,7 @@
                                 <p>Address : </p>
                             </div>
                             <div class="col-lg-7">
-                                <textarea cols="3" name="address" class="form-control"></textarea>
+                                <textarea cols="3" name="address" class="form-control"><?php echo $profile['address']; ?></textarea>
                             </div>
                             <div class="col-lg-1"></div>
                         </div>
@@ -170,7 +172,7 @@
                                 <p>Telephone : </p>
                             </div>
                             <div class="col-lg-7">
-                                <input type="text" name="tel" class="form-control" value="" style="height: 30px;">
+                                <input type="text" name="tel" class="form-control" value="<?php echo $profile['tel']; ?>" style="height: 30px;">
                             </div>
                             <div class="col-lg-2"></div>
                         </div>
@@ -182,7 +184,7 @@
                                 <p>Education : </p>
                             </div>
                             <div class="col-lg-7">
-                                <textarea cols="3" name="edu" class="form-control"></textarea>
+                                <textarea cols="3" name="edu" class="form-control"><?php echo $profile['education']; ?></textarea>
                             </div>
                             <div class="col-lg-2"></div>
                         </div>
@@ -194,7 +196,31 @@
                                 <p>Subject to Teach : </p>
                             </div>
                             <div class="col-lg-7">
-                                <textarea cols="3" name="subject" class="form-control"></textarea>
+                                <select name="subject" class="form-control" style="width: 300px">
+                                    <?php
+                                        $sema = "";
+                                        $sesc = "";
+                                        $seth = "";
+                                        $seso = "";
+                                        $seen = "";
+                                        if($profile['subject'] === "math") {
+                                            $sema = "selected";
+                                        }elseif($profile['subject'] === "sci") {
+                                            $sesc = "selected";
+                                        }elseif($profile['subject'] === "thai") {
+                                            $seth = "selected";
+                                        }elseif($profile['subject'] === "social") {
+                                            $seso = "selected";
+                                        }elseif($profile['subject'] === "english") {
+                                            $seen = "selected";
+                                        }
+                                    ?>
+                                    <option value="math" <?php echo $sema;?> >คณิตศาสตร์</option>
+                                    <option value="sci" <?php echo $sesc;?> >วิทยาศาสตร์</option>
+                                    <option value="thai" <?php echo $seth;?> >ภาษาไทย</option>
+                                    <option value="social" <?php echo $seso;?> >สังคมศึกษา</option>
+                                    <option value="english" <?php echo $seen;?> >ภาษาอังกฤษ</option>
+                                </select>
                             </div>
                             <div class="col-lg-2"></div>
                         </div>
@@ -206,7 +232,7 @@
                                 <p>Detail : </p>
                             </div>
                             <div class="col-lg-7">
-                                <textarea cols="3" name="detail" class="form-control"></textarea>
+                                <textarea cols="3" name="detail" class="form-control"><?php echo $profile['other_info']; ?></textarea>
                             </div>
                             <div class="col-lg-2"></div>
                         </div>
@@ -218,7 +244,7 @@
                                 <p>VDO Preview : </p>
                             </div>
                             <div class="col-lg-6">
-                                <input type="text" name="vdo" class="form-control" value="" style="height: 30px;">
+                                <input type="text" name="vdo" class="form-control" value="<?php echo $profile['vdo']; ?>" style="height: 30px;">
                             </div>
                             <div class="col-lg-2"><div style="color:red;">*Only Youtube URL</div></div>
                         </div>
@@ -226,9 +252,11 @@
                     </div>
                    
                     <div class="col-lg-12">
-                         <br><br><center><button type="button" class="btn btn-primary">Agreement</button>
-                         <button type="button" class="btn btn-primary">OK</button>
-                         <button type="button" class="btn btn-primary">EDIT</button></center></br></br>
+                    <center>
+                        <?php echo anchor("tutorhome","<button type='button' class='btn btn-warning'>Cancle</button>"); ?>&nbsp&nbsp
+                         <button type="submit" class="btn btn-success">EDIT</button></center></br></br>
+                         </center>
+                         <?php echo form_close(); ?>
                 </div>
 
 

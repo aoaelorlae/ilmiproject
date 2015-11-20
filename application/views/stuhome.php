@@ -49,14 +49,9 @@
             <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="<?=base_url()?>index.php/index">ILMITUTOR.COM</a>
-            </div>
+                    
+                    <a class="navbar-brand" href="<?=base_url()?>index.php/index" style ="color:white;"><img src="<?=base_url()?>images/icon/logo3.png" style="height: 30px; width: auto;"></a>
+                </div>
              
                 <ul class="nav navbar-right top-nav">
                 
@@ -84,38 +79,37 @@
                 <div class="container-fluid">
                     <center><h1 style="font-weight: bold;"> WELCOME</h1></center>
                     
-                    <div class="col-lg-12">
-                        <center>
+                    <div class="col-lg-12 col-xs-12">
                         
-                        <div class="col-lg-6" >
+                        <div class="col-lg-6  col-xs-12">
                             <img src='<?=base_url()?>images/icon/step_2.png'style="float:right;">
 
-                        </div></center>
+                        </div>
 
-                        <div class="col-lg-6">
-                            <div class="col-lg-12" style="margin-top: 50px;">
-                                <div class="col-lg-4">
+                        <div class="col-lg-6  col-xs-12">
+                            <div class="col-lg-12  col-xs-12" style="margin-top: 50px;">
+                                <div class="col-lg-4  col-xs-6">
                                     <?php echo anchor("stuprofile", "<img src='".base_url()."/images/icon/profile.png'>");?>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-8  col-xs-6">
                                     <h2 style="font-weight: bold;margin-top: 25px;font-family: Trebuchet MS,Georgia, Serif;"> Profile<br><h4> ข้อมูลประวัติ</h4> </h2>
                                 </div>
                             </div>
 
-                            <div class="col-lg-12" style="margin-top: 30px;">
-                                <div class="col-lg-4">
+                            <div class="col-lg-12 col-xs-12" style="margin-top: 30px;">
+                                <div class="col-lg-4 col-xs-6">
                                     <?php echo anchor("sturequest", "<img src='".base_url()."/images/icon/request.png'>");?>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-8 col-xs-6">
                                     <h2 style="font-weight: bold;margin-top: 25px; font-family: Trebuchet MS,Georgia, Serif;"> Request Tutor<br><h4>ส่งคำร้องแก่ติวเตอร์</h4> </h2>
                                 </div>
                             </div>
 
-                            <div class="col-lg-12"style="margin-top: 30px;">
-                                <div class="col-lg-4">
+                            <div class="col-lg-12 col-xs-12"style="margin-top: 30px;">
+                                <div class="col-lg-4 col-xs-6">
                                     <?php echo anchor("stulog", "<img src='".base_url()."/images/icon/mytutor.png'>");?>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-8 col-xs-6">
                                     <h2 style="font-weight: bold;margin-top: 25px;font-family: Trebuchet MS,Georgia, Serif;"> My Tutor<br><h4>ติวเตอร์ที่เคยสอน </h4></h2>
                                 </div>
                             </div>
@@ -130,7 +124,7 @@
                     
              <center>
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-12  col-xs-12">
                         <div class="col-lg-12" style="margin-top: 40px">
                             <ol class="breadcrumb">
                                 <li>Contact us in this page </li>

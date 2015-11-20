@@ -49,17 +49,29 @@
 
     <body>
 
+            <script type="text/javascript">
+                <?php 
+                    if ($pay == 0) {
+
+                    }elseif ($pay == 1) {
+                        echo "$( document ).ready(function() {
+                                    alert('Payment Complete');
+                                });";
+                    }elseif ($pay == 2) {
+                        echo "$( document ).ready(function() {
+                                    alert('Payment Incomplete');
+                                });";
+                    }
+                ?>
+            </script>
+
             <!-- Navigation -->
             <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="<?=base_url()?>index.php/store">ILMI TUTOR</a>
+                    <a class="navbar-brand" href="<?=base_url()?>index.php/index" style ="color:white;"><img src="<?=base_url()?>images/icon/logo3.png" style="height: 30px; width: auto;"></a>
+                    <ul class="nav navbar-nav">
+                    <li><a href="<?=base_url()?>index.php/tutorhome" style="color: #BBBBBB;" >Tutor Home</a></li></ul>
                 </div>
                 <ul class="nav navbar-right top-nav">
                 
@@ -81,7 +93,7 @@
             </nav>
 
             <div id="page-wrapper">
-                <div class="container-fluid" style="height: 70vh">
+                <div class="container-fluid" style="height: 75vh">
         <div class="col-lg-12">
             <div class="col-lg-4"></div>
             <div class="col-lg-4">
@@ -91,16 +103,6 @@
                             <h2 style="color:#3366ff; text-align: center;font-weight: bold;margin-top: 30px;margin-bottom: 30px;">Payment Here</h2> 
                             <input type="Hidden" Name="psb" value="psb"/> 
                             <input Type="Hidden" Name="biz" value="panvasa5622@gmail.com"/> 
-                            
-                            
-                            <script type="text/javascript">
-                                window.onload=function(){
-                                    var stoid = '<?php echo $store ?>';
-                                    var setval = 'pack'+stoid+'01';
-                                    $("#inv").attr("value",setval);
-                                }
-                            </script>
-
                             <!-- inv is Some String text from paysbuy-->
                             <input Type="Hidden" Name="inv" id="inv" value=""/> 
                             <input Type="Hidden" Name="itm" value="Service Charge"/> 
@@ -118,7 +120,7 @@
 
         </div>
 
-        <div class="col-lg-12">
+        <div class="col-lg-12" style="margin-top : 40px">
             <div class="col-lg-4"></div>
             <div class="col-lg-4">
                     <h4 style="color:#3366ff; font-weight: bold; text-align: center; ">Choose Request</h4>       
@@ -145,17 +147,23 @@
 
                     <?php 
                         $no = 1;
+                        // echo "<pre>";
+                        // print_r($re);
+                        // echo "</pre>";
                         foreach ($re as $r) {
                             if ($r['subject'] === $tu['subject']) {
-                                echo "<tr>";
-                                echo "<td style='text-align: center;'><input type='radio'  name='request' value='".$r['request_id']."'></td>";
-                                echo "<td style='text-align: center;'>".$no."</td>";
-                                echo "<td style='text-align: center;'>".$r['student_date']."</td>";
-                                echo "<td style='text-align: center;'>".$r['start_date']."</td>";
-                                echo "<td style='text-align: center;'>".$r['time']."</td>";
-                                echo "<td style='text-align: center;'>".$r['location']."</td>";
-                                echo "</tr>";
-                                $no++;
+                                if ($r['payment_id'] == null) {
+                                    echo "<tr>";
+                                    echo "<td style='text-align: center;'><input type='radio' onchange='setval(".$r['request_id'].")' id='re".$r['request_id']."'  name='request' value='".$r['request_id']."'></td>";
+                                    echo "<td style='text-align: center;'>".$no."</td>";
+                                    echo "<td style='text-align: center;'>".$r['student_date']."</td>";
+                                    echo "<td style='text-align: center;'>".$r['start_date']."</td>";
+                                    echo "<td style='text-align: center;'>".$r['time']."</td>";
+                                    echo "<td style='text-align: center;'>".$r['location']."</td>";
+                                    echo "</tr>";
+                                    $no++;
+                                }
+                                
                             }
                         }
 
@@ -163,10 +171,26 @@
                     ?>
 
                     </tbody>
-                    
-                    
                 </table>
             </div>
+
+            <script type="text/javascript">
+            function setval(re) {
+                var tu = <?php echo $this->session->userdata('tuid'); ?>;
+                if (tu < 10) {
+                    tu = "00"+tu;
+                }else if (tu<100) {
+                    tu = "0"+tu;
+                }
+                if (re < 10) {
+                    re = "00"+re;
+                }else if (re<100) {
+                    re = "0"+re;
+                }
+                var setval = tu+""+re;
+                $("#inv").attr("value",setval);
+            }
+            </script>
 
             </div>
             <div class="col-lg-1"></div>
@@ -187,7 +211,7 @@
                         <div class="col-lg-12" style="margin-top: 40px">
                             <ol class="breadcrumb">
                                 <li>You can contact us in this page </li>
-                                <li> facebook : www.facebook.com/Telekhong</li>
+                                <li> Website : www.ilmitutor.com</li>
                                 <li> KingMongkutt's University of technology thonburi</li>
                             </ol>
                         </div>

@@ -49,15 +49,11 @@
             <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="<?=base_url()?>index.php/index">ILMITUTOR.COM</a>
+                    
+                    <a class="navbar-brand" href="<?=base_url()?>index.php/index" style ="color:white;"><img src="<?=base_url()?>images/icon/logo3.png" style="height: 30px; width: auto;"></a>
                     <ul class="nav navbar-nav">
-                    <li><a href="<?=base_url()?>index.php/stuhome" style="color: #BBBBBB;" >Student Home</a></li></ul>
+                        
+                    </ul>
                 </div>
                 <ul class="nav navbar-right top-nav">
                 
@@ -96,9 +92,9 @@
 
                     <!-- img left -->
                     <div class="col-lg-3">
-                        <center><img src="" style="width:150px;height:180px;"></center>
+                        <center><img src="<?=base_url()?>images/student/<?php echo $profile['stu_pic']; ?>" style="width:150px;height:180px;"></center>
                     </div>
-
+                    <?php echo form_open('stuprofile/edit'); ?>
                     <!-- body center -->
                     <div class="col-lg-5">
                         <!-- username -->
@@ -107,7 +103,7 @@
                                 <p>Username : </p>
                             </div>
                             <div class="col-lg-7">
-                                <input type="text" name="username" class="form-control" value="" disabled style="height: 30px;">
+                                <input type="text" name="username" class="form-control" value="<?php echo $profile['username']; ?>" disabled style="height: 30px;">
                             </div>
                             <div class="col-lg-2"></div>
                         </div>
@@ -119,7 +115,7 @@
                                 <p>Name : </p>
                             </div>
                             <div class="col-lg-7">
-                                <input type="text" name="name" class="form-control" value="" style="height: 30px;">
+                                <input type="text" name="name" class="form-control" value="<?php echo $profile['name']; ?>" style="height: 30px;">
                             </div>
                             <div class="col-lg-2"></div>
                         </div>
@@ -132,8 +128,16 @@
                             </div>
                             <div class="col-lg-7">
                                 <select class="form-control" name="sex">
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
+                                    <?php 
+                                        $gen = $profile['sex'];
+                                        if ($gen === "male") {
+                                            echo "<option value='male' selected>Male</option>";
+                                            echo "<option value='female'>Female</option>";
+                                        }else{
+                                            echo "<option value='male'>Male</option>";
+                                            echo "<option value='female' selected>Female</option>";
+                                        }
+                                    ?>
                                 </select>
                             </div>
                             <div class="col-lg-2"></div>
@@ -146,7 +150,7 @@
                                 <p>Birth Date : </p>
                             </div>
                             <div class="col-lg-7">
-                                <input type="date" name="birth" class="form-control" value="" >
+                                <input type="date" name="birth" class="form-control" value="<?php echo $profile['birth']; ?>" >
                             </div>
                             <div class="col-lg-2"></div>
                         </div>
@@ -158,7 +162,7 @@
                                 <p>Address : </p>
                             </div>
                             <div class="col-lg-7">
-                                <textarea cols="3" name="address" class="form-control"></textarea>
+                                <textarea cols="3" name="address" class="form-control"><?php echo $profile['address']; ?></textarea>
                             </div>
                             <div class="col-lg-2"></div>
                         </div>
@@ -170,7 +174,7 @@
                                 <p>Email : </p>
                             </div>
                             <div class="col-lg-7">
-                                <input type="text" name="email" class="form-control" value="" style="height: 30px;">
+                                <input type="text" name="email" class="form-control" value="<?php echo $profile['stu_email']; ?>" style="height: 30px;">
                             </div>
                             <div class="col-lg-2"></div>
                         </div>
@@ -182,10 +186,11 @@
                                 <p>Telephone : </p>
                             </div>
                             <div class="col-lg-7">
-                                <input type="text" name="phone" class="form-control" value="" style="height: 30px;">
+                                <input type="text" name="tel" class="form-control" value="<?php echo $profile['tel']; ?>" style="height: 30px;">
                             </div>
                             <div class="col-lg-2"></div>
                         </div>
+                        <div class="col-lg-12" style="margin-top: 30px"></div>
 
 
 
@@ -201,8 +206,11 @@
                 
                 
                     <div class="col-lg-12">
-                         <br><br><center><button type="button" class="btn btn-primary">OK</button>
-                         <button type="button" class="btn btn-primary">EDIT</button></center></br></br>
+                         <center>
+                        <?php echo anchor("stuhome","<button type='button' class='btn btn-warning'>Cancle</button>"); ?>&nbsp&nbsp
+                         <button type="submit" class="btn btn-success">EDIT</button></center></br></br>
+                         </center>
+                         <?php echo form_close(); ?>
                 </div>
        
 

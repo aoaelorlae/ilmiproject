@@ -49,13 +49,8 @@
             <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="<?=base_url()?>index.php/store">ILMITUTOR.COM</a>
+                    
+                    <a class="navbar-brand" href="<?=base_url()?>index.php/index" style ="color:white;"><img src="<?=base_url()?>images/icon/logo3.png" style="height: 30px; width: auto;"></a>
                     <ul class="nav navbar-nav">
                     <li><a href="<?=base_url()?>index.php/tutorhome" style="color: #BBBBBB;" >Student Home</a></li></ul>
                 </div>
@@ -80,39 +75,115 @@
             <div id="page-wrapper">
                 <div class="container-fluid">
                     <center><h1 style="font-weight: bold;">STATISTICS</h1></center>
-        <div class="col-xs-12">
-            <div class="col-xs-2"></div>
-            <div class="col-xs-8">
-            <table class="table table-striped" style="margin-top: 30px;">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Name</th>
-                        <th>Subject</th>
-                        <th>Start Date</th>
-                        <th>Detail</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Ratirot Lakdee</td>
-                        <td>Thai</td>
-                        <td>July, 5th 1994</td>
-                        <td><button type="button" class="btn btn-info">Click</button></td>
-                </tbody>
-                <tbody>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Prach Saynatee</td>
-                        <td>English</td>
-                        <td>Jauary,6th 1995</td>
-                        <td><button type="button" class="btn btn-info">Click</button></td>
-                </tbody>
-            </table>
-            </div>
-            <div class="col-xs-2"></div>
-        </div>
+                <div class="col-lg-12 col-xs-12">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8 col-xs-12">
+                    <table class="table table-striped" style="margin-top: 30px;">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Subject</th>
+                                <th>Start Date</th>
+                                <th>Detail</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <?php 
+                                $no = 1;
+                                if (count($rs)==0) {
+                                    echo "<tr><td colspan='5' align='center'>---Don't Have Tutor In Your Catalog.----</td></tr>";
+                                }else{
+                                    foreach ($rs as $r) {
+                                        echo "<tr>";
+                                        echo "<th scope='row'>".$no."</th>";
+                                        echo "<td>".$r['name']."</td>";
+                                        echo "<td>".$r['subject']."</td>";
+                                        echo "<td>".$r['start_date']."</td>";
+                                        echo "<td><button type='button' class='btn btn-info' data-toggle='modal' data-target='#myModaldetail".$r['tutor_id']."'>Detail</button></td>";
+                                        echo "<td>";
+                                        echo "<div class='modal fade' id='myModaldetail".$r['tutor_id']."' role='dialog'>
+                                                <div class='modal-dialog'>
+                                                  <div class='modal-content'>
+                                                    <div class='modal-header'>
+                                                        <button type='button' class='close' data-dismiss='modal'></button>
+                                                        <h4 class='modal-title' >Student Detail</h4>
+                                                    </div>
+                                                    <div class='modal-body'style='padding:0px 50px;'>
+                                                        <div class='col-lg-12'>
+                                                            <div class='col-lg-4'>
+                                                                <img src='".base_url()."images/tutor/".$r['pic']."' style='width: 150px; height: auto;margin-top: 50%'>
+                                                            </div>
+                                                            <div class='col-lg-8'>
+                                                                <table style='margin : 0 auto;'>
+                                                                    <tr><td>&nbsp</td></tr>
+                                                                    <tr >
+                                                                        <td align='right'>Name : </td>
+                                                                        <td >".$r['name']."</td>
+                                                                    </tr>
+                                                                    <tr><td>&nbsp</td></tr>
+                                                                    <tr >
+                                                                        <td align='right'>Telephone : </td>
+                                                                        <td>".$r['tel']."</td>
+                                                                    </tr>
+                                                                    <tr><td>&nbsp</td></tr>
+                                                                    <tr>
+                                                                        <td align='right'>Email : </td>
+                                                                        <td>".$r['tu_email']."</td>
+                                                                    </tr>
+                                                                    <tr><td>&nbsp</td></tr>
+                                                                    <tr>
+                                                                        <td align='right'>Education : </td>
+                                                                        <td>".$r['education']."</td>
+                                                                    </tr>
+                                                                    <tr><td>&nbsp</td></tr>
+                                                                    <tr>
+                                                                        <td align='right'>Subject : </td>
+                                                                        <td>".$r['subject']."</td>
+                                                                    </tr>
+                                                                    <tr><td>&nbsp</td></tr>
+                                                                    <tr>
+                                                                        <td align='right'>Study Date : </td>
+                                                                        <td>".$r['student_date']."</td>
+                                                                    </tr>
+                                                                    <tr><td>&nbsp</td></tr>
+                                                                    <tr>
+                                                                        <td align='right'>Time : </td>
+                                                                        <td>".$r['time']."</td>
+                                                                    </tr>
+                                                                    <tr><td>&nbsp</td></tr>
+                                                                    <tr>
+                                                                        <td align='right'>Start Date : </td>
+                                                                        <td>".$r['start_date']."</td>
+                                                                    </tr>
+                                                                    <tr><td>&nbsp</td></tr>
+                                                                    
+                                                                </table>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class='modal-footer'>
+                                                        <button type='button' class='btn btn-default' data-dismiss='modal'>Close</button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>";
+                                        echo "</td>";
+
+                                        echo "</tr>";
+
+                                        $no++;
+                                    }
+                                    }
+                            ?>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
                     
 
@@ -124,7 +195,6 @@
                                 <li>Contact us in this page </li>
                                 <li><a href="<?=base_url()?>index.php/index"> www.ilmitutor.com</li></a>
                                 <li> King Mongkut's University of Technology Thonburi</li>
-                            </ol>
                             </ol>
                         </div>
                     </div>

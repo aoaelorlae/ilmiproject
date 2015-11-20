@@ -15,7 +15,7 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="<?=base_url()?>assets/js/jquery.cropit.js"></script>
-    <script src="<?=base_url()?>assets/js/jquery.js"></script>
+   
     <!-- Bootstrap Core CSS -->
     <link href="<?=base_url()?>assets/css/bootstrap.min.css" rel="stylesheet">
 
@@ -28,10 +28,6 @@
     <!-- Custom Fonts -->
     <link href="<?=base_url()?>assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <script src="<?=base_url()?>assets/js/bootstrap.min.js"></script>
-    <script src="<?=base_url()?>assets/js/bootstrap-datetimepicker.min.js"></script>
-    <script src="<?=base_url()?>assets/js/bootstrap-datetimepicker.js"></script>
-    <link href="<?=base_url()?>assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
-    <link href="<?=base_url()?>assets/css/bootstrap-datetimepicker.css" rel="stylesheet">
 
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -44,6 +40,29 @@
     </head>
 
     <body>
+        <style>
+          .cropit-image-preview {
+            background-color: #f8f8f8;
+            background-size: cover;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-top: 7px;
+            width: 400px;
+            height: 400px;
+            cursor: move;
+        }
+        .cropit-image-background {
+            opacity: .2;
+            cursor: auto;
+        }
+        .image-size-label {
+            margin-top: 10px;
+        }
+        input {
+            display: block;
+        }
+
+    </style>
 
             <!-- Navigation -->
             <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -69,7 +88,8 @@
                 <!-- div center -->
                 <div class="col-lg-8">
                     <div style="text-align:left;margin-left: 20px;"><h3></h3>
-                    <?php echo form_open("turegis/registutor");?>
+                    <form action="<?=base_url()?>index.php/turegis/registutor" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+                    
                     <!-- username -->
                     <div class="col-lg-5" style="text-align:right;" >Username :</div>
                     <div class="col-lg-7"><input type="text" name="username" class="form-control" placeholder="Username" style="width:200px" id="stn"></div>
@@ -141,6 +161,48 @@
                     <div class="col-lg-7"><textarea class="form-control" name="detail" rows="3" style="width:250px" placeholder="Detail" id="detail"></textarea></div>
                     <div class="col-lg-12" style="margin-top:30px;"></div>
 
+                    <!-- tutor picture -->
+                    <div class="col-lg-5" style="text-align:right;" >Picture :</div>
+                    <div class="col-lg-7">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal" >Image Upload</button>
+                        <div class="modal fade" id="modal" role="dialog">
+                            <div class="modal-dialog ">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"></button>
+                                        <h4 class="modal-title" >Image Upload</h4>
+                                    </div>
+                                    <div class="modal-body"style="padding:20px 50px 20px 50px;">
+                                        <p style="text-align:center;color:red">You can upload image.jpg/.png/.gif/.jpeg only ! </p>
+                                        <div class="image-editor" style="margin-left:50px">
+                                            <input type="file" id="image"  name='picture' class="cropit-image-input" onchange="enablebt();" >
+                                            <div class="cropit-image-preview" ></div>
+                                            <div class="image-size-label">
+                                                Resize image
+                                            </div>
+                                            <input type="range" class="cropit-image-zoom-input" style="width:400px">
+                                            <input type="hidden" name="image-data" class="hidden-image-data" />
+
+
+                                        </div>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="export btn btn-primary" disabled id="bt1" data-dismiss="modal">Upload</button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12" style="margin-top:10px;"></div>
+                    <div class="col-lg-5"></div>
+                    <div class="col-lg-7">
+                    <div class="cropped"></div>
+                    </div>
+                    <div class="col-lg-12" style="margin-top:30px;"></div>
+
                     <!-- VDO -->
                     <div class="col-lg-5" style="text-align:right;" >URL VDO Demo :</div>
                     <div class="col-lg-7"><input type="text" name="vdo" class="form-control" placeholder="Only Youtube URL" style="width:200px" id="telnum"></div>
@@ -153,8 +215,32 @@
                         &nbsp&nbsp&nbsp
                         <?php echo anchor("index", "<button type='button' class='btn btn-danger'>Cancle</button>"); ?>
                         
-                        <?php echo form_close(); ?>
+                        </form>
                     </div>  
+
+                    <script>
+
+                        $('.image-editor').cropit();
+                        $('.export').click(function() {
+                          var imageData = $('.image-editor').cropit('export');
+                          $('.cropped').empty();
+                          $('.cropped').append('<img src="'+imageData+'" height="120" width="120">');
+
+                      });
+                        $('form').submit(function() {
+                            // Move cropped image data to hidden input
+                            var imageData = $('.image-editor').cropit('export');
+                            $('.hidden-image-data').val(imageData);
+                            return true;
+                        });
+
+                    </script>
+                    <script>
+                        function enablebt(){
+                            document.getElementById("bt1").disabled = false;
+
+                        }
+                    </script>
 
              <center>
                 <div class="row">

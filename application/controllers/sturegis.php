@@ -32,6 +32,28 @@ class Sturegis extends CI_Controller {
     					VALUES ('".$user."', '".$name."', '".$nick."', '".$sex."', '".$birth."', '".$pass."', '".$add."', '".$email."', '".$tel."','".$school."') ";
 
     	$this->db->query($sqladdstu);
+
+
+        // $this->db->query($sqlregis);
+        $sqlaa = "select * from request";
+        $this->db->query($sqlaa);
+        $sqlaa = "select * from user_tutor";
+        $this->db->query($sqlaa);
+        $sqlaa = "select * from user_student";
+        $this->db->query($sqlaa);
+
+        $sqlgettuid = "select * from user_student where username = '".$user."' and password = '".$pass."' and name = '".$name."' ";
+        $rs = $this->db->query($sqlgettuid)->row_array();
+        $stid = $rs['student_id'];
+
+        $image_data = $this->input->post("image-data");
+        if ($image_data !=""){
+            $data = base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $image_data));     
+            file_put_contents('images/student/student-'.$stid.'.jpg', $data);
+            $newname = "student-".$stid.".jpg";
+            $sqlupdate = "update user_student SET stu_pic ='".$newname."' WHERE student_id = '".$stid."'";
+            $this->db->query($sqlupdate);
+        }
         redirect("login");
 
 

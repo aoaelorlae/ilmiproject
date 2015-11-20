@@ -43,8 +43,29 @@ class Sturequest extends CI_Controller {
 
         $this->db->query($sqladdrequest);
 
-        redirect("stuhome");
+        $sqlreid = "select * from request where subject = '".$subject."' and student_date = '".$day."' and location = '".$location."' and detail = '".$detail."' and student_id = '".$id."' ";
+        $rei = $this->db->query($sqlreid)->row_array();
+        $reid = $rei['request_id'];
 
+        $topic = "[".$reid."] ILMI TUTOR ";
+        $detail = "request id : ".$reid."\nSubject : ".$sub."\nStart : ".$startdate."\nStudy : ".$day."\nTime : ".$time."\r\nLocation : ".$location."\r\nLevel : ".$level."\r\nDetail : ".$detail."\r\n\r\n Thank You, ILMITUTOR";
+
+        $sqlgettu = "select * from user_tutor where subject = '".$sub."' ";
+        $rs = $this->db->query($sqlgettu)->result_array();
+
+        $this->load->library('email_class');
+        foreach ($rs as $r) {
+            $email_data = array(
+                        'from' => array('name' => 'ILMITUTOR'),
+                        'to' => array('email' => $r['tu_email'], 'name' => $r['name']),
+                        'subject' => $topic,
+                        'message' => $detail
+                        );
+            $this->email_class->send_email($email_data);
+        }
+
+
+        redirect("stuhome");
 
     }
 

@@ -38,13 +38,7 @@
             <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#" style ="color:white;">ILMITUTOR.COM</a>
+                    <a class="navbar-brand" href="<?=base_url()?>index.php/index" style ="color:white;"><img src="<?=base_url()?>images/icon/logo3.png" style="height: 30px; width: auto;"></a>
             </div>
              <div>
               
@@ -95,8 +89,8 @@
 <!-- /#page-wrapper -->
 <center>
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="col-lg-12" style="margin-top: 40px">
+                <div class="col-lg-12 col-xs-12">
+                    <div class="col-lg-12 col-xs-12" style="margin-top: 40px">
                         <ol class="breadcrumb">
                             <li>Contact us in this page </li>
                             <li><a href="<?=base_url()?>index.php/index"> www.ilmitutor.com</li></a>
